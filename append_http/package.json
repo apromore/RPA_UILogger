@@ -1,0 +1,31 @@
+{
+  "name": "node-connector",
+  "version": "1.0.0",
+  "main": "app.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint && nsp check"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.18.3",
+    "clipboard-monitor": "^1.0.2",
+    "clipboardy": "^1.2.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0",
+    "nsp": "^2.1.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "write-to-file-node connector"
+}
