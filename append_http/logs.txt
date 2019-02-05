@@ -873,3 +873,1567 @@
 "[Thu Jan 17 2019 16:33:18 GMT+1100 (AUS Eastern Daylight Time)] {\"timeStamp\":1547703198950,\"eventType\":\"mouseClick\",\"target\":{\"tagName\":\"SUMMARY\"}}"
 "[Thu Jan 17 2019 16:33:20 GMT+1100 (AUS Eastern Daylight Time)] {\"timeStamp\":1547703200623,\"eventType\":\"mouseClick\",\"target\":{\"tagName\":\"path\"}}"
 "[Thu Jan 17 2019 16:33:20 GMT+1100 (AUS Eastern Daylight Time)] {\"timeStamp\":1547703200625,\"eventType\":\"copy\",\"content\":\"\",\"target\":{\"tagName\":\"CLIPBOARD-COPY\"}}"
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"MEN'S SINGLES
+",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Today
+22 Jan
+",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick","cnt","DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Images",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"H3",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"INPUT","text","q","clipmonit npm",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"INPUT","text","q","clipboard monitor",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"H3",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"clipboardy",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"ok ",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"ok so i think i found a bug: I have a brother with ",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"ok so i think i found a bug: I have a brother with a maimed foot (+ 1 action point per tile moved), so I gave him pathfinder (-1 action point to a min of 3",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"ok so i think i found a bug: I have a brother with a maimed foot perm injury(+ 1 action point per tile moved), so I gave him pathfinder (-1 action point to a min of 3",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"ok so i think i found a bug: I have a brother with a maimed foot perm injury(+ 1 action point per tile moved), so I gave him pathfinder (-1 action point to a min of 2 AP per tile), but it still says 3 AP to move on grass",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"apparently its a ""feature""",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"seems dumb to me, having to spend a perk to combat a perm injury seems like a decent enough tradeoff",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"oh well gonna sack him then",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"IMG",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Would sodium explode in salt water?",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick","left-sidebar","DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"this post",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick","header","DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"oncopy event listener: crash on copy image",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"P",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Categories",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"2 bannermen",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"and nets for the heroes",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"if they have 2h weapons just shield push them away, they dont have enough ap to move and swing unless possessed",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"i like to have 2h swords on the flanks for the overhead line chop to snipe the gheists",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"you need 2 for that many gheists",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"might even be worth dropping all his armor",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"for max fatigue",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"hmm warbrands are usually easy to find in the early game",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"maybe he has a life",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"outside of videogames :)",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"any sword with 2 tile range",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"gheists only need 1 hit to die",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"question for the chat: which of the ",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"question for the chat: which of the crisis is more fun? I'm currently in a Noble War and it seems pretty meh after the first couple of fights. Having to deal with allied AI can be a bit frustrating, but its the best way to get some sweet 300gear.",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick","rcnt","DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"im savescumming this BB campaign when some key dude dies since I want to make it to later stages in the game (my previous campaigns all ended at around day 30ish), Im trying to learn how to fight scraths, nercosavants and large scale battles",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"next campaign going full ironman",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"Artem - 24-Nov-2018 to 20-Jan-2019 (Available on Skype calls)
+Andre - 6 - 8 Feb 2019
+Fubo - 
+Ilya - 21-Jan-2019 to 15-Feb-2019
+Marcello - 
+Bruce - ",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"path",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"MEN'S SINGLES
+",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Categories",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"IMG",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"IMG",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Following",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"svg",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"the less %hp the target has the more dmg it does",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"it only really works vs targets with little to no armor like unholds",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"it only really works well vs targets with little to no armor like unholds",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"H3",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"H3",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"H3",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"IMG",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Following",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"P",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Hosts",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Categories",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"IMG",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"https://tinyurl.com/BBbuilds",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"Chrome: add full xpath to event targets?",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"BUTTON","button",,"","",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"H3",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"BUTTON","button",,"","",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"BUTTON","button",,"","",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"BUTTON","button",,"","",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"BUTTON","button",,"","",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"H3",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick","postLoginSubmitButton","INPUT","submit",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange","usernameInput","INPUT","text","username","UserName",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange","passwordInput","INPUT","password","password","User Password",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"BUTTON","submit",,"Login","LOGIN",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"H3",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange","LogonName","INPUT","text","LogonName","amcguire",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange","Password","INPUT","password","Password","User Password",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"BUTTON","button",,"","",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Following",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"H3",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"MEN'S DOUBLES
+",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"SPAN",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Technical",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Shinobi",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"Lucky Finds Something",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"A",,,,"http://steamcommunity.com/sharedfiles/filedetails/?id=938481969",,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"hope those smgs ",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"hope those smgs deal ",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"TEXTAREA","textarea",,"",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"DIV",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"INPUT","text","q","check port in use powershell",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"INPUT","text","q","check port in use powershell",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"INPUT","text","q","check port in use powershell",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"fieldChange",,"INPUT","text","q","kill process on port windows powershell",,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"H3",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"focus changed",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"activated",,,,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"ARTICLE",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"CODE",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"CODE",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"CODE",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"mouseClick",,"CODE",,,,,,,
+"timestamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+,,,"copy",,"CODE",,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296617495,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296618147,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296618148,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296641966,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296765086,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296765087,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296768183,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296769157,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296783177,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296787535,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296787536,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296798258,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296824952,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296824957,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296828085,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296838205,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296840867,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296857193,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296946489,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548296997115,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297002477,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297003398,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297013261,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297015305,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297016232,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297017129,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297018019,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297027556,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297030436,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297031971,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297036540,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297036542,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297036545,,,"activated",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297041108,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297043038,,,"mouseClick",,"TEXTAREA","textarea",,"",,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297506524,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297510463,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297537107,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297538327,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297538862,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297540489,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297567501,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297569161,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297621056,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297622067,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297649697,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297650754,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297652876,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297662612,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297751970,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297753034,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297762475,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297763394,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297806913,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297807701,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297843738,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297844840,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297876264,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297877246,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297960151,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297961699,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297968028,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297968757,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548297979576,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298018134,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298045016,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298070739,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298158708,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298159721,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298203971,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298210049,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298212321,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298213131,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298216204,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298217384,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298220740,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298223487,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298249717,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298250679,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298314401,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298315110,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298328075,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298331771,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298341883,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298348211,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298370694,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298375132,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298385228,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298386999,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298391763,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298393522,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298420349,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298421550,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298424785,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298425482,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298455159,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298456724,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298459383,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298460816,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298483565,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298485169,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298494009,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298496671,,,"focus changed",,,,,,,,,
+"timeStamp","userID","targetApp","eventType","target.id","target.tagName","target.type","target.name","target.value","target.innerText","target.checked","target.href","target.option"
+1548298524277,,,"focus changed",,,,,,,,,

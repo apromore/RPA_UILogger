@@ -1,6 +1,6 @@
 {
     "name": "Passive Listener",
-    "version": "1.0",
+    "version": "1.5",
     "description": "Records Actions to a logger",
     "background": {
         "scripts": [
@@ -21,7 +21,7 @@
     ],
     
     "permissions": [
-        "tabs"
+        "tabs","storage","declarativeContent","webNavigation"
     ],
     "browser_action": {
         "default_popup": "popup.html"

@@ -15,7 +15,9 @@
     "body-parser": "^1.18.3",
     "clipboard-monitor": "^1.0.2",
     "clipboardy": "^1.2.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "json2csv": "^4.3.3",
+    "npm": "^6.6.0"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
