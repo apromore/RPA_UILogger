@@ -1,5 +1,4 @@
 // triggers every time a new page is activated.
-<<<<<<< HEAD
 chrome.tabs.onActivated.addListener(function () { printUrl("activated") });
 
 //chrome.webNavigation.onBeforeNavigate.addListener(logOnBefore);
@@ -8,10 +7,6 @@ chrome.tabs.onActivated.addListener(function () { printUrl("activated") });
 // chrome.windows.onFocusChanged.addListener(function () { printUrl("focus changed") });
 // chrome.webNavigation.onCommitted.addListener(navigation);
 
-=======
-//chrome.tabs.onActivated.addListener(function () { printUrl("activated") });
-chrome.windows.onFocusChanged.addListener(function () { printUrl("focus changed") });
->>>>>>> df8183ce5f0dba9caf9c03ee742ad2179e4bcacc
 
 //connect runtime
 var portFromCS;
