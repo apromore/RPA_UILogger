@@ -54,10 +54,6 @@ function postRest(req) {
     }
 }
 
-<<<<<<< HEAD
-=======
-chrome.webNavigation.onCommitted.addListener(navigation);
->>>>>>> df8183ce5f0dba9caf9c03ee742ad2179e4bcacc
 
 function navigation(evt){
     var req = { timeStamp: Date.now(), eventType: evt.transitionType, eventQual:JSON.stringify(evt.transitionQualifiers),url: evt.url };
@@ -67,7 +63,6 @@ function navigation(evt){
     }
 }
 
-<<<<<<< HEAD
 function navigation(evt){
     var req = { timeStamp: Date.now(), eventType: evt.transitionType, eventQual:JSON.stringify(evt.transitionQualifiers),url: evt.url };
     if (evt.transitionType != "auto_subframe") {
@@ -76,10 +71,6 @@ function navigation(evt){
     }
 }
 
-=======
-//chrome.webNavigation.onBeforeNavigate.addListener(logOnBefore);
-// very spammy!
->>>>>>> df8183ce5f0dba9caf9c03ee742ad2179e4bcacc
 
 function logOnBefore(details){
     var req = { timeStamp: Date.now(), eventType: "navigateTo", url: details.url };
