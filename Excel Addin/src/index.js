@@ -79,7 +79,7 @@ function handleChange(event) {
     return Excel.run(function (context) {
         var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
         range.load(['address', 'values']);
-        var timestamp = Date.now();
+        var timeStamp = Date.now();
         return context.sync()
             .then(function () {
                 //var timestamp = Date.now();
@@ -88,7 +88,7 @@ function handleChange(event) {
                 console.log("Content of range: " + range.values);
                 //console.log("Timestamp " = timestamp);
                 if ($('#onoff').prop('checked')) {
-                    var eventObj={timeStamp:timestamp,targetApp:"Excel",eventType:changeType,target:{id:event.address,value:range.values}}
+                    var eventObj={timeStamp:timeStamp,targetApp:"Excel",eventType:changeType,target:{id:event.address,value:range.values}}
                     postRest(eventObj);
                 }
                 //console.log("Source of event: " + event.source);
@@ -101,18 +101,20 @@ function handleSelectionChange(event) {
     return Excel.run(function (context) {
         var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
         range.load(['address', 'values']);
-        var timestamp = Date.now();
+        var timeStamp = Date.now();
         return context.sync()
             .then(function () {
                 console.log("Change type of event: Selection Changed");
                 console.log("Address of event: " + event.address);
                 console.log("Content of range: " + range.values);
-                if ($('#onoff').prop('checked')) {
-                    var eventObj={timeStamp:timestamp,targetApp:"Excel",eventType:changeType,target:{id:event.address,value:range.values}};
-                    postRest(eventObj);
-                }
+                // if ($('#onoff').prop('checked')) {
+                     var eventObj={timeStamp:timeStamp,targetApp:"Excel",eventType:changeType,target:{id:event.address,value:range.values}};
+                                        
+                //     postRest(eventObj);
+                // }
                 //console.log("Source of event: " + event.source);
-                //OfficeHelpers.UI.notify("Selection Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " +range.values);
+               // OfficeHelpers.UI.notify("Selection Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " +range.values);
+                OfficeHelpers.UI.notify("obj: "+JSON.stringify(eventObj))
             });
     }).catch(errorHandle)
 }
