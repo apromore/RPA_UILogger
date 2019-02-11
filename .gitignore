@@ -58,6 +58,7 @@ yarn-debug.log*
 yarn-error.log*
 log.txt
 logs.txt
+*.csv
 
 
 # Dependency directories

@@ -94,6 +94,7 @@ function mouseClick(e) {
     var eventObj = { timeStamp: Date.now() };
     var evt = window.event || e;
     eventObj.eventType = "mouseClick";
+<<<<<<< HEAD
     // var dt1 = getDataT1Class(evt);
     // console.log("CLick");
     // if (dt1 != "") {
@@ -108,12 +109,23 @@ function mouseClick(e) {
             myPort.postMessage(eventObj); // need to cahnge this to make it generic
         }
     // }
+=======
+    console.log("label" + dt1.LabelText)
+    var target = buildTarget(evt);
+    eventObj.target = event.target;
+    console.log("clicked")
+    console.log("eventObj: " + JSON.stringify(eventObj));
+    if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.href != null) {
+        myPort.postMessage(eventObj);
+    }
+>>>>>>> df8183ce5f0dba9caf9c03ee742ad2179e4bcacc
 }
 
 // build the target object
 function buildTarget(mye) {
     var target = mye.target;
     var targetObj = {};
+<<<<<<< HEAD
 
     if (target.id != null && target.id != undefined && target.id != "") {
         targetObj.id = target.id;
@@ -141,12 +153,46 @@ function buildTarget(mye) {
             }
             else {
                 targetObj.value = target.value;
+=======
+    var dt1 = getDataT1Class(target);
+    if (dt1 != ""){
+        targetObj = dt1; // specific for student 1 application
+    } else {
+        if (target.id != null && target.id != undefined && target.id != "") {
+            targetObj.id = target.id;
+        }
+        if (target.tagName != null && target.tagName != undefined && target.tagName != "") {
+            var tagName = target.tagName;
+            targetObj.tagName = tagName;
+            var username = "";
+            if (target.type != null && target.type != undefined && target.type != "") {
+                targetObj.type = target.type;
+            }
+            if (target.name != null && target.name != undefined && target.name != "") {
+                targetObj.name = target.name;
+                username = target.name.toString();
+                username = username.replace(/\s/g, "");
+            }
+            if (target.value != null && target.value != undefined) {
+                // do not store passwords
+                if (target.type.toLowerCase() == "password") {
+                    targetObj.value = "User Password";
+                }
+                //do not store user names
+                else if (username.toLowerCase() == "username" || username.toLowerCase() == "user") {
+                    targetObj.value = "UserName"
+                }
+                else {
+                    targetObj.value = target.value;
+                }
+>>>>>>> df8183ce5f0dba9caf9c03ee742ad2179e4bcacc
             }
         }
         if (target.type == "checkbox" || target.type == "radio") {
             if (target.checked != null && target.checked != undefined) {
                 targetObj.checked = target.checked;
             }
+<<<<<<< HEAD
         }
         //Hrefs
         if (target.href != null && target.href != undefined && target.href != "") {
@@ -163,8 +209,25 @@ function buildTarget(mye) {
     }
     if (target.option != null && target.option != undefined && target.option != "") {
         targetObj.option = target.option;
+=======
+            //Hrefs
+            if (target.href != null && target.href != undefined && target.href != "") {
+                targetObj.href = target.href;
+            } else {
+                var href = getParentLink(target);
+                if (href != "") { // get the ultimate parent href if exists
+                    targetObj.href = href;
+                }
+            }
+            // this section might be site specific, needs further testing
+            if (target.innerText != null && target.innerText != undefined && target.innerText != "")
+                targetObj.innerText = target.innerText;
+        }
+        if (target.option != null && target.option != undefined && target.option != "") {
+            targetObj.option = target.option;
+        }
+>>>>>>> df8183ce5f0dba9caf9c03ee742ad2179e4bcacc
     }
-
     //console.log("targetObj: "+JSON.stringify(targetObj));
     return targetObj;
 }
@@ -177,7 +240,11 @@ function getParentLink(target) {
         //console.log("parent: " + target.tagName)
         if (target.href != null && target.href != undefined && target.href != "") {
             href = target.href;
+<<<<<<< HEAD
             test = false;
+=======
+            test=false;
+>>>>>>> df8183ce5f0dba9caf9c03ee742ad2179e4bcacc
         }
         if (target.tagName == "BODY") {
             test = false;
@@ -187,14 +254,21 @@ function getParentLink(target) {
     return href
 }
 
+<<<<<<< HEAD
 function getDataT1Class(mye) {
     var test = true;
     var target=mye.target;
+=======
+function getDataT1Class(target) {
+    var test = true;
+    //var target=mye.target;
+>>>>>>> df8183ce5f0dba9caf9c03ee742ad2179e4bcacc
     var dt1 = "";
     while (test) {
         var dataT1Ctrl = target.getAttribute("data-t1-control");
         if (dataT1Ctrl != null && dataT1Ctrl != undefined) {
             dt1 = dataT1Ctrl;
+<<<<<<< HEAD
             test = false;
             console.log("dt1 found!")
         }
@@ -204,6 +278,16 @@ function getDataT1Class(mye) {
                 test = false;
             }
 
+=======
+            test =false;
+        }
+        else {
+            target = target.parentNode
+            if (target.TagName == "BODY") {
+                test = false;
+            }
+            
+>>>>>>> df8183ce5f0dba9caf9c03ee742ad2179e4bcacc
         }
     }
     console.log(dt1);
