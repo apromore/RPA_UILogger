@@ -1,6 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    devServer: {
+        disableHostCheck: true
+      },
     entry: {
         polyfill: 'babel-polyfill',
         app: './src/index.js',

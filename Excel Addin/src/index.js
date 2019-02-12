@@ -58,13 +58,14 @@ async function changeColor() {
             range.format.fill.color = 'yellow';
 
             await context.sync();
-            console.log(`LOG: The range address was ${range.address}.`);
+            //console.log(`LOG: The range address was ${range.address}.`);
             //OfficeHelpers.UI.notify(`The range address was ${range.address} and value was ${range.values}.`);
             //OfficeHelpers.UI.notify(`Excel,ColorChange: ${range.address}, ${range.values}`);
-            if ($('#onoff').prop('checked')) {
-                postRest("Excel", "ColorChange", range.address, range.values);
-            }
-
+            
+            var req = {targetApp:"Excel", eventType:"ColorChange",target:{id: range.address, value:range.values}};
+            console.log(req);
+            postRest(req);
+            
         });
     } catch (error) {
         OfficeHelpers.UI.notify(error);
@@ -82,16 +83,14 @@ function handleChange(event) {
         var timeStamp = Date.now();
         return context.sync()
             .then(function () {
-                //var timestamp = Date.now();
                 console.log("Change type of event: " + event.changeType);
                 console.log("Address of event: " + event.address);
                 console.log("Content of range: " + range.values);
-                //console.log("Timestamp " = timestamp);
-                if ($('#onoff').prop('checked')) {
-                    var eventObj={timeStamp:timeStamp,targetApp:"Excel",eventType:changeType,target:{id:event.address,value:range.values}}
-                    postRest(eventObj);
-                }
-                //console.log("Source of event: " + event.source);
+                
+                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: event.changeType, target: { id: event.address, value: range.values } }
+                postRest(eventObj);
+                
+                console.log(eventObj);
                 OfficeHelpers.UI.notify("Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " + range.values);
             });
     }).catch(errorHandle)
@@ -108,44 +107,38 @@ function handleSelectionChange(event) {
                 console.log("Address of event: " + event.address);
                 console.log("Content of range: " + range.values);
                 // if ($('#onoff').prop('checked')) {
-                     var eventObj={timeStamp:timeStamp,targetApp:"Excel",eventType:changeType,target:{id:event.address,value:range.values}};
-                                        
-                //     postRest(eventObj);
+                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: "SelectionChange", target: { id: event.address, value: range.values } };
+                
+                postRest(eventObj);
                 // }
                 //console.log("Source of event: " + event.source);
-               // OfficeHelpers.UI.notify("Selection Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " +range.values);
-                OfficeHelpers.UI.notify("obj: "+JSON.stringify(eventObj))
+                // OfficeHelpers.UI.notify("Selection Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " +range.values);
+                OfficeHelpers.UI.notify("obj: " + JSON.stringify(eventObj))
             });
     }).catch(errorHandle)
 }
 
-function postRest(eventObj) {
-    //OfficeHelpers.UI.notify("postRest reached");
-    //var obj = { a: source, b: type, c: address, d: values };
-
-    //OfficeHelpers.UI.notify(JSON.stringify(obj));
-    $.ajax({
-        type: "POST",
-        url: "http://127.0.0.1:8080",
-        // url: "https://httpslogger-yili-handy-apps.apps.dev.ldcloud.com.au",
-        crossDomain: true,
-        contentType: 'application/json',
-        data: JSON.stringify(eventObj),
-        //data : '{"a": "Come",            "b": "from",            "c": "Excel"        }',
-        //dataType: 'json',
-        success: function (responseData, status, xhr) {
-            console.log("Request Successful!" + responseData);
-            //OfficeHelpers.UI.notify("Request Successful!" + responseData);
-        },
-        error: function (request, status, error) {
-            console.log("Request Failed! " + JSON.stringify(request) + 'Status ' + status + "Error msg: " + error);
-            //OfficeHelpers.UI.notify("Request Failed! " + JSON.stringify(request) + 'Status ' + status + "Error msg: " + error);
-        }
-    });
+function postRest(req) {
+    if ($('#onoff').prop('checked')) {
+        console.log("Recording Enabled")
+        $.ajax({
+            type: "POST",
+            url: "http://127.0.0.1:8080",
+            crossDomain: true,
+            contentType: 'application/json',
+            data: JSON.stringify(req),
+            success: function (responseData, status, xhr) {
+                console.log("Request Successful!" + responseData);
+            },
+            error: function (request, status, error) {
+                console.log("Request Failed! " + JSON.stringify(request) + 'Status ' + status + "Error msg: " + error);
+            }
+        });
+    } else { console.log("Recording Disabled") }
 }
 
-function errorHandle() {
-    console.log("An error has occured")
+function errorHandle(error) {
+    console.log("An error has occured" + error)
     OfficeHelpers.UI.notify("An error has occurred")
 }
 /////
