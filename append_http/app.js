@@ -20,11 +20,6 @@ var port = 8080;
 
 http.createServer(app).listen(port);
 
-// https.createServer({
-//   key: fs.readFileSync('./sslcert/key.pem'),
-//   cert: fs.readFileSync('./sslcert/cert.pem')
-// }, app).listen(8080);
-
 app.get('/', function (req, res) {
   res.header('Content-type', 'text/html');
   return res.end('<h1>Hello World!</h1>');
@@ -59,7 +54,7 @@ app.post('/', function (req, res) {
 
   fs.appendFile('logs.csv', csv + "\n", function (err) {
     if (err) throw err;
-   // console.log(json2csvParser);
+    // console.log(json2csvParser);
     //res.write(JSON.stringify(req.body));
     res.write("http appended");
     res.end();
@@ -67,54 +62,23 @@ app.post('/', function (req, res) {
 
 });
 
-console.log('Server running at '+port);
+console.log('Server running at ' + port);
 
-
-
-///// CLIPBOARD MONITOR
-
-
-const clipboardy = require('clipboardy');
-
-// clipboardy.writeSync('🦄');
-
-// clipboardy.readSync();
-// //=> '🦄'
-
-const clipMonit = require('clipboard-monitor');
+//const clipboardy = require('./clipboardy.js');
+const clipMonit = require('./clipboard/clipmonit.js');
 
 //initialize & optionally set the interval with which to monitor the clipboard
-//try {
 var monitor = clipMonit(500);
 var initialize = false;
-////} catch (error) {
-//console.log("Monitor error")
-//}
 
-/*
-NOTE: interval defaults to 500ms so you can simply initialize using:
-    'monitor = clipMonit()';
-*/
+//'copy. event is fired every time data is copied to the clipboard
+monitor.on('copy', function (data) {
+  if (initialize == true && typeof data == "string") {
+    //do something with the data
+    // var output = "[" + new Date() + "] " + JSON.stringify({eventType:"Copy",data:data});
+    console.log(typeof data + "'" + data + "'");
+    //  console.log(output);
+  } else { initialize = true; }
+});
 
-
-//now monitor your events...
-try {
-  //'copy. event is fired every time data is copied to the clipboard
-  monitor.on('copy', function (data) {
-    if (initialize == true && typeof data == "string") {
-      //do something with the data
-      // var output = "[" + new Date() + "] " + JSON.stringify({eventType:"Copy",data:data});
-      console.log(typeof data);
-      //  console.log(output);
-    } else { initialize = true; }
-  });
-
-} catch (err) {
-  console.log(" copy error")
-}
-
-// Add error handling for copying picturestargetApp
-
-//Stop the monitoring the clipboard
-//monitor.end();
-//
+//clipboardy.read().then(function (data){console.log("clip: "+data)})
