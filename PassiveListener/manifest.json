@@ -1,6 +1,6 @@
 {
     "name": "Passive Listener",
-    "version": "1.5",
+    "version": "1.6",
     "description": "Records Actions to a logger",
     "background": {
         "scripts": [
