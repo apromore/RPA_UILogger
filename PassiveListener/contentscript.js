@@ -95,19 +95,20 @@ function mouseClick(e) {
     var evt = window.event || e;
     eventObj.eventType = "mouseClick";
     // var dt1 = getDataT1Class(evt);
-    // console.log("CLick");
-    // if (dt1 != "") {
+
+    // if (dt1 != null && dt1 != undefined) {
     //     // specific for student 1 application
-    //     console.log("label" + dt1.LabelText)
+
+    //     eventObj.target = dt1;
     // } else {
         var target = buildTarget(evt);
         eventObj.target = target;
-        console.log("clicked")
-        console.log("eventObj: " + JSON.stringify(eventObj));
+
         if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.href != null) {
-            myPort.postMessage(eventObj); // need to cahnge this to make it generic
+        myPort.postMessage(eventObj); // need to cahnge this to make it generic
         }
     // }
+    console.log("eventObj: " + JSON.stringify(eventObj));
 }
 
 // build the target object
@@ -122,6 +123,9 @@ function buildTarget(mye) {
         var tagName = target.tagName;
         targetObj.tagName = tagName;
         var username = "";
+        if (target.class != null && target.class != undefined && target.class != "") {
+            targetObj.class = target.class;
+        }
         if (target.type != null && target.type != undefined && target.type != "") {
             targetObj.type = target.type;
         }
@@ -187,24 +191,42 @@ function getParentLink(target) {
 }
 
 function getDataT1Class(mye) {
+    console.log("function entered")
     var test = true;
-    var target=mye.target;
-    var dt1 = "";
+    var target = mye.target;
+    var dt1 = {};
     while (test) {
-        var dataT1Ctrl = target.getAttribute("data-t1-control");
-        if (dataT1Ctrl != null && dataT1Ctrl != undefined) {
-            dt1 = dataT1Ctrl;
+        var dataT1 = {};
+        dataT1.ctrl = target.getAttribute("data-t1-control");
+        dataT1.class = target.getAttribute("class");
+        dataT1.type = target.getAttribute("data-t1-control-type")
+       // console.log("type" + dataT1.type)
+
+        if (dataT1.ctrl != undefined && dataT1.ctrl != null) {
+            //console.log("dataT1 found")
+            var dt1ctrl = JSON.parse(dataT1.ctrl);
+            dt1.class = dataT1.class;
             test = false;
-            console.log("dt1 found!")
-        }
-        else {
+            if (dt1ctrl.LabelText != undefined ) {
+                dt1.name = d1ctrl.LabelText;    
+            }
+            if (dataT1.type != undefined && dataT1.type != null) {
+                if (dataT1.type.toLowerCase() == "checkbox") {
+                    //console.log("checkbox found");
+                    dataT1.class.includes(" checked") ? dt1.checked = true : dt1.checked = false;
+                }
+            }
+        } else {
             target = target.parentNode
+            //console.log("ptarget" + target)     
+            //console.log("parentname: " + target.tagName)
             if (target.tagName == "BODY") {
                 test = false;
             }
 
         }
     }
-    console.log(dt1);
+    //console.log("end cycle" + JSON.stringify(dt1));
     return dt1;
 }
+
