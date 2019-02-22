@@ -80,7 +80,7 @@ function handleChange(event) {
     return Excel.run(function (context) {
         var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
         range.load(['address', 'values']);
-        var timeStamp = Date.now();
+        var timeStamp = new Date(Date.now());
         return context.sync()
             .then(function () {
                 console.log("Change type of event: " + event.changeType);
@@ -100,7 +100,7 @@ function handleSelectionChange(event) {
     return Excel.run(function (context) {
         var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
         range.load(['address', 'values']);
-        var timeStamp = Date.now();
+        var timeStamp = new Date(Date.now());
         return context.sync()
             .then(function () {
                 console.log("Change type of event: Selection Changed");

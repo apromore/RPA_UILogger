@@ -33,25 +33,25 @@ console.log('Server running at ' + port);
 const clipMonit = require('./clipboard/clipmonit.js');
 
 //initialize & optionally set the interval with which to monitor the clipboard
-var monitor = clipMonit(500);
+var monitor = clipMonit(1);
 var initialize = false;
 
 //'copy. event is fired every time data is copied to the clipboard
 monitor.on('copy', function (data) {
-  if (initialize == true && typeof data == "string") {
+  if (initialize == true && typeof data == "string" && data !== "Invalid Content") {
     //do something with the data
     // var output = "[" + new Date() + "] " + JSON.stringify({eventType:"Copy",data:data});
-    console.log(typeof data + "'" + data + "'");
+	var regex = /\r\n/g;
+	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"Copy",content:data.replace(regex,'')};
+	console.log(eventObj);
+    csvParse(eventObj,0)
     //  console.log(output);
   } else { initialize = true; }
-
-  eventObj={timeStamp:Date.now(),targetApp:"OS-Clipboard",eventType:"Copy",target:{value:data}};
-  csvParse(eventObj,0)
 });
 
 function csvParse(data,res){
   const Json2csvParser = require('json2csv').Parser;
-  const fields = ['timeStamp', 'userID', 'targetApp', 'url', 'eventType', 'target.id','target.class','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option'];
+  const fields = ['timeStamp', 'userID', 'targetApp', 'eventType', 'url', 'content', 'target.id','target.class','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option'];
 
   var json2csvParser;
   if (!fs.existsSync('logs.csv')) {

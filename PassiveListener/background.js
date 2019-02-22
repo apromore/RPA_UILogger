@@ -25,7 +25,7 @@ function connected(p) {
 function printUrl(message) {
     chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, function (tabs) {
         var activetab = tabs[0].url;
-        var req = { timeStamp: Date.now(),targetApp:"Chrome", eventType: message, url: activetab };
+        var req = { timeStamp: new Date(Date.now()),targetApp:"Chrome", eventType: message, url: activetab };
         //alert(req);
         console.log(req);
         postRest(req);
@@ -54,7 +54,7 @@ function postRest(req) {
     }
 }
 
-
+/*
 function navigation(evt){
     var req = { timeStamp: Date.now(), eventType: evt.transitionType, eventQual:JSON.stringify(evt.transitionQualifiers),url: evt.url };
     if (evt.transitionType != "auto_subframe") {
@@ -62,9 +62,10 @@ function navigation(evt){
         postRest(req);
     }
 }
+*/
 
 function navigation(evt){
-    var req = { timeStamp: Date.now(), eventType: evt.transitionType, eventQual:JSON.stringify(evt.transitionQualifiers),url: evt.url };
+    var req = { timeStamp: new Date(Date.now()), eventType: evt.transitionType, eventQual:JSON.stringify(evt.transitionQualifiers),url: evt.url };
     if (evt.transitionType != "auto_subframe") {
         console.log(req);
         postRest(req);
@@ -73,7 +74,7 @@ function navigation(evt){
 
 
 function logOnBefore(details){
-    var req = { timeStamp: Date.now(), eventType: "navigateTo", url: details.url };
+    var req = { timeStamp: new Date(Date.now()), eventType: "navigateTo", url: details.url };
     //alert(req);
     console.log(req);
     postRest(req);

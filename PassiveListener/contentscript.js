@@ -27,39 +27,41 @@ document.body.onchange = onChange; // works at the end of change
 //document.body.onfocus = onSelect;
 
 function paste(e) {
-    var eventObj = { timeStamp: Date.now() };
+    var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
     eventObj.eventType = "paste";
     var target = buildTarget(evt);
-    eventObj.content = evt.clipboardData.getData('text/plain');
+	var regex = /\r\n/g;
+    eventObj.content = evt.clipboardData.getData('text/plain').replace(regex,'');
     eventObj.target = target;
     console.log(eventObj);
     myPort.postMessage(eventObj);
 }
 
 function copy(e) {
-    var eventObj = { timeStamp: Date.now() };
+    var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
     eventObj.eventType = evt.type;
     var target = buildTarget(evt);
     var copydata = document.getSelection();
     console.log("copypaste: " + copydata);
-    eventObj.content = copydata.toString();
+	var regex = /\r\n/g;
+    eventObj.content = copydata.toString().replace(regex,'');
     eventObj.target = target;
     console.log("eventObj: " + JSON.stringify(eventObj));
     myPort.postMessage(eventObj);
 }
 
 function keyPress(e) {
-    var eventObj = { timeStamp: Date.now() };
+    var eventObj = { timeStamp: new Date(Date.now()) };
     eventObj.eventType = "keypress";
     eventObj.target = targetNaming(e.target);
     console.log(JSON.stringify(eventObj));
 }
 
-// onChange procs every tiume there an element has finished changed
+// onChange procs every time there an element has finished changed
 function onChange(e) {
-    var eventObj = { timeStamp: Date.now() };
+    var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
     eventObj.eventType = "fieldChange";
     var target = buildTarget(evt);
@@ -70,7 +72,7 @@ function onChange(e) {
 
 // onInput procs every time there is a change to an element's value (procs for each key stroke)
 function onInput(e) {
-    var eventObj = { timeStamp: Date.now() };
+    var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
     eventObj.eventType = "fieldInput";
     var target = buildTarget(evt);
@@ -91,7 +93,7 @@ function onSelect(e) {
 
 function mouseClick(e) {
     //alert('test');
-    var eventObj = { timeStamp: Date.now() };
+    var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
     eventObj.eventType = "mouseClick";
     // var dt1 = getDataT1Class(evt);
@@ -105,7 +107,7 @@ function mouseClick(e) {
         eventObj.target = target;
 
         if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.href != null) {
-        myPort.postMessage(eventObj); // need to cahnge this to make it generic
+        myPort.postMessage(eventObj); // need to change this to make it generic
         }
     // }
     console.log("eventObj: " + JSON.stringify(eventObj));
