@@ -86,8 +86,13 @@ function handleChange(event) {
                 console.log("Change type of event: " + event.changeType);
                 console.log("Address of event: " + event.address);
                 console.log("Content of range: " + range.values);
-                
-                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: event.changeType, target: { id: event.address, value: range.values } }
+                var tmp = range.values;
+                if (tmp[0].length == 1) {
+                    var eventType = "editCell";
+                } else {
+                    var eventType = "editCellRange";
+                }
+                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: range.values } }
                 postRest(eventObj);
                 
                 console.log(eventObj);
@@ -106,9 +111,13 @@ function handleSelectionChange(event) {
                 console.log("Change type of event: Selection Changed");
                 console.log("Address of event: " + event.address);
                 console.log("Content of range: " + range.values);
-                // if ($('#onoff').prop('checked')) {
-                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: "SelectionChange", target: { id: event.address, value: range.values } };
-                
+                var tmp = range.values;
+                if (tmp[0].length == 1) {
+                    var eventType = "getCell";
+                } else {
+                    var eventType = "getCellRange";
+                }
+                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: range.values } };
                 postRest(eventObj);
                 // }
                 //console.log("Source of event: " + event.source);
