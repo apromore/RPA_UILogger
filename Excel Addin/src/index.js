@@ -90,7 +90,7 @@ function handleChange(event) {
                 if (tmp[0].length == 1) {
                     var eventType = "editCell";
                 } else {
-                    var eventType = "editCellRange";
+                    var eventType = "editRange";
                 }
                 var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: range.values } }
                 postRest(eventObj);
@@ -112,10 +112,10 @@ function handleSelectionChange(event) {
                 console.log("Address of event: " + event.address);
                 console.log("Content of range: " + range.values);
                 var tmp = range.values;
-                if (tmp[0].length == 1) {
+				if (!event.address.includes(":")) {
                     var eventType = "getCell";
                 } else {
-                    var eventType = "getCellRange";
+                    var eventType = "getRange";
                 }
                 var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: range.values } };
                 postRest(eventObj);

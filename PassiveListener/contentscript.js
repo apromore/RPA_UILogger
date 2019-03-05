@@ -31,7 +31,7 @@ function paste(e) {
     var evt = window.event || e;
     eventObj.eventType = "paste";
     var target = buildTarget(evt);
-	var regex = /\r\n/g;
+	var regex = /\r|\n|\t/g;
     eventObj.content = evt.clipboardData.getData('text/plain').replace(regex,'');
     eventObj.target = target;
     console.log(eventObj);
