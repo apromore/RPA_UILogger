@@ -42,7 +42,7 @@ monitor.on('copy', function (data) {
     //do something with the data
     // var output = "[" + new Date() + "] " + JSON.stringify({eventType:"Copy",data:data});
 	var regex = /\r|\n|\t/g;
-	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"Copy",content:data.replace(regex,'')};
+	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content:data.replace(regex,'')};
 	console.log(eventObj);
     csvParse(eventObj,0)
     //  console.log(output);
