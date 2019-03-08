@@ -87,14 +87,15 @@ function handleChange(event) {
                 console.log("Address of event: " + event.address);
                 console.log("Content of range: " + range.values);
                 var tmp = range.values;
-                if (tmp[0].length == 1) {
+                if (!event.address.includes(":")) {
                     var eventType = "editCell";
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: tmp[0].toString() } };
+					postRest(eventObj);
                 } else {
                     var eventType = "editRange";
-                }
-                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: range.values } }
-                postRest(eventObj);
-                
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: tmp } }
+					postRest(eventObj);
+                }           
                 console.log(eventObj);
                 OfficeHelpers.UI.notify("Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " + range.values);
             });
@@ -114,11 +115,13 @@ function handleSelectionChange(event) {
                 var tmp = range.values;
 				if (!event.address.includes(":")) {
                     var eventType = "getCell";
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: tmp[0].toString() } };
+					postRest(eventObj);
                 } else {
                     var eventType = "getRange";
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: tmp } };
+					postRest(eventObj);
                 }
-                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: range.values } };
-                postRest(eventObj);
                 // }
                 //console.log("Source of event: " + event.source);
                 // OfficeHelpers.UI.notify("Selection Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " +range.values);
