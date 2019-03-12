@@ -1,2 +1,2 @@
 #!/bin/sh
-npm start --prefix Excel_Addin & node append_http/. & 
+(npm start --prefix Excel_Addin & npm start --prefix append_http)
