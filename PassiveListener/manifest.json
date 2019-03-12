@@ -1,7 +1,10 @@
 {
     "name": "Passive Listener",
-    "version": "1.6",
+    "version": "1.7",
     "description": "Records Actions to a logger",
+    "icons": {
+        "128": "128.png"
+        },
     "background": {
         "scripts": [
             "background.js","jquery-3.3.1.min.js"

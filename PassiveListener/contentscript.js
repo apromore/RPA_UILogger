@@ -96,20 +96,20 @@ function mouseClick(e) {
     var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
     eventObj.eventType = "mouseClick";
-    // var dt1 = getDataT1Class(evt);
-
-    // if (dt1 != null && dt1 != undefined) {
-    //     // specific for student 1 application
-
-    //     eventObj.target = dt1;
-    // } else {
+    var dt1 = getDataT1Class(evt);
+    console.log("eventObj: "+JSON.stringify(dt1));
+    if (dt1 != null && dt1 != undefined) {
+        // specific for student 1 application
+        eventObj.target = dt1;
+        myPort.postMessage(eventObj);
+    } else {
         var target = buildTarget(evt);
         eventObj.target = target;
 
         if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.href != null) {
         myPort.postMessage(eventObj); // need to change this to make it generic
         }
-    // }
+    }
     console.log("eventObj: " + JSON.stringify(eventObj));
 }
 
@@ -201,16 +201,21 @@ function getDataT1Class(mye) {
         var dataT1 = {};
         dataT1.ctrl = target.getAttribute("data-t1-control");
         dataT1.class = target.getAttribute("class");
-        dataT1.type = target.getAttribute("data-t1-control-type")
+        dataT1.type = target.getAttribute("data-t1-control-type");
+        dataT1.id = target.getAttribute("id");
+        dataT1.title = target.getAttribute("title");
        // console.log("type" + dataT1.type)
 
-        if (dataT1.ctrl != undefined && dataT1.ctrl != null) {
+        if (dataT1.ctrl != undefined || dataT1.ctrl != null) {
             //console.log("dataT1 found")
             var dt1ctrl = JSON.parse(dataT1.ctrl);
             dt1.class = dataT1.class;
             test = false;
             if (dt1ctrl.LabelText != undefined ) {
-                dt1.name = d1ctrl.LabelText;    
+                dt1.innerText = dt1ctrl.LabelText;    
+            }
+            if (dataT1.title != null && dataT1.title != undefined){
+                dt1.name = dataT1.title;
             }
             if (dataT1.type != undefined && dataT1.type != null) {
                 if (dataT1.type.toLowerCase() == "checkbox") {
@@ -219,7 +224,7 @@ function getDataT1Class(mye) {
                 }
             }
         } else {
-            target = target.parentNode
+            target = target.parentNode;
             //console.log("ptarget" + target)     
             //console.log("parentname: " + target.tagName)
             if (target.tagName == "BODY") {
