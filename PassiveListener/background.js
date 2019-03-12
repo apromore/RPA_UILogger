@@ -1,12 +1,12 @@
 // triggers every time a new page is activated.
-chrome.tabs.onActivated.addListener(function () { printUrl("activated") });
+chrome.tabs.onActivated.addListener(function () { printUrl("tab activated") });
 
 //chrome.webNavigation.onBeforeNavigate.addListener(logOnBefore);
 // very spammy!
 
-// chrome.windows.onFocusChanged.addListener(function () { printUrl("focus changed") });
-// chrome.webNavigation.onCommitted.addListener(navigation);
-
+chrome.windows.onFocusChanged.addListener(function () { printUrl("focus window changed") });
+chrome.webNavigation.onCommitted.addListener(navigation);
+chrome.tabs.onRemoved.addListener(function () { printUrl("tab closed") });
 
 //connect runtime
 var portFromCS;
@@ -24,11 +24,20 @@ function connected(p) {
 
 function printUrl(message) {
     chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, function (tabs) {
-        var activetab = tabs[0].url;
-        var req = { timeStamp: new Date(Date.now()),targetApp:"Chrome", eventType: message, url: activetab };
-        //alert(req);
-        console.log(req);
-        postRest(req);
+        try {
+            var activetab = tabs[0].url;
+            if (activetab.includes("newtab")) {
+                var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: "new tab created", url: activetab };
+            } else {
+                var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: message, url: activetab };
+            }
+            //alert(req);
+            console.log(req);
+            postRest(req);
+        }
+        catch (err) {
+            console.log("Platform not supported");
+        }
     });
 }
 
@@ -64,8 +73,8 @@ function navigation(evt){
 }
 */
 
-function navigation(evt){
-    var req = { timeStamp: new Date(Date.now()), eventType: evt.transitionType, eventQual:JSON.stringify(evt.transitionQualifiers),url: evt.url };
+function navigation(evt) {
+    var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: evt.transitionType, eventQual: JSON.stringify(evt.transitionQualifiers), url: evt.url };
     if (evt.transitionType != "auto_subframe") {
         console.log(req);
         postRest(req);
@@ -73,7 +82,7 @@ function navigation(evt){
 }
 
 
-function logOnBefore(details){
+function logOnBefore(details) {
     var req = { timeStamp: new Date(Date.now()), eventType: "navigateTo", url: details.url };
     //alert(req);
     console.log(req);
