@@ -29,6 +29,7 @@ app.post('/', function (req, res) {
 });
 
 console.log('Server running at ' + port);
+console.log("Action Logger now recording")
 
 const clipMonit = require('./clipboard/clipmonit.js');
 
