@@ -24,18 +24,33 @@ Office.initialize = (reason) => {
         $('#run').click(changeColor);
         // Event Listeners   --- move to other page?
         Excel.run(function (context) {
-            var toggle = $('#onoff').prop('checked');
             var worksheet = context.workbook.worksheets.getActiveWorksheet();
+            
             worksheet.onChanged.add(handleChange);
             worksheet.onSelectionChanged.add(handleSelectionChange);
 
+            context.workbook.worksheets.onActivated.add(({ worksheetId}) => {
+                Excel.run(function (context) {
+                worksheet = context.workbook.worksheets.getActiveWorksheet();
+                console.log(worksheetId);
+                worksheet.onChanged.add(handleChange);
+                worksheet.onSelectionChanged.add(handleSelectionChange);  
+                //OfficeHelpers.UI.notify("Selected worksheet" + worksheetId);
+                return context.sync()
+                .then(function () {
+                    console.log("Sheet changed.");
+                    // OfficeHelpers.UI.notify("Event Handlers Registered");
+                });
+                }).catch(errorHandle);
+            })
             return context.sync()
                 .then(function () {
                     console.log("Event handler successfully registered for onChanged event in the worksheet.");
                     console.log("Event handler successfully registered for onSelectionChanged event in the worksheet.");
-                    OfficeHelpers.UI.notify("Event Handlers Registered");
+                    // OfficeHelpers.UI.notify("Event Handlers Registered");
                 });
-        }).catch(errorHandle);
+        
+            }).catch(errorHandle);
     });
 };
 
@@ -79,7 +94,9 @@ async function changeColor() {
 function handleChange(event) {
     return Excel.run(function (context) {
         var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
-        range.load(['address', 'values']);
+        var name = context.workbook.worksheets.getActiveWorksheet();
+        name.load("name");
+        range.load(['address', 'values', 'name']);
         var timeStamp = new Date(Date.now());
         return context.sync()
             .then(function () {
@@ -92,7 +109,8 @@ function handleChange(event) {
                 } else {
                     var eventType = "editCellRange";
                 }
-                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: range.values } }
+                // console.log("name is: " + name.name);
+                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { name: name.name, id: event.address, value: range.values } }
                 postRest(eventObj);
                 
                 console.log(eventObj);
@@ -104,6 +122,8 @@ function handleChange(event) {
 function handleSelectionChange(event) {
     return Excel.run(function (context) {
         var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
+        var name = context.workbook.worksheets.getActiveWorksheet();
+        name.load("name");
         range.load(['address', 'values']);
         var timeStamp = new Date(Date.now());
         return context.sync()
@@ -117,7 +137,7 @@ function handleSelectionChange(event) {
                 } else {
                     var eventType = "getCellRange";
                 }
-                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: range.values } };
+                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { name: name.name, id: event.address, value: range.values } };
                 postRest(eventObj);
                 // }
                 //console.log("Source of event: " + event.source);
