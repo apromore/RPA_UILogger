@@ -31,7 +31,7 @@ function paste(e) {
     var evt = window.event || e;
     eventObj.eventType = "paste";
     var target = buildTarget(evt);
-	var regex = /\r\n/g;
+	var regex = /\r|\n|\t/g;
     eventObj.content = evt.clipboardData.getData('text/plain').replace(regex,'');
     eventObj.target = target;
     console.log(eventObj);
@@ -45,7 +45,7 @@ function copy(e) {
     var target = buildTarget(evt);
     var copydata = document.getSelection();
     console.log("copypaste: " + copydata);
-	var regex = /\r\n/g;
+	var regex = /\r|\n|\t/g;
     eventObj.content = copydata.toString().replace(regex,'');
     eventObj.target = target;
     console.log("eventObj: " + JSON.stringify(eventObj));
@@ -54,7 +54,7 @@ function copy(e) {
 
 function keyPress(e) {
     var eventObj = { timeStamp: new Date(Date.now()) };
-    eventObj.eventType = "keypress";
+    eventObj.eventType = "pressKey";
     eventObj.target = targetNaming(e.target);
     console.log(JSON.stringify(eventObj));
 }
@@ -63,7 +63,7 @@ function keyPress(e) {
 function onChange(e) {
     var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
-    eventObj.eventType = "fieldChange";
+    eventObj.eventType = "editField";
     var target = buildTarget(evt);
     eventObj.target = target;
     console.log("eventObj: " + JSON.stringify(eventObj));
