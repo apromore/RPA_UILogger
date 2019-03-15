@@ -16,15 +16,24 @@ app.use(function (req, res, next) {
 var port = 8080;
 http.createServer(app).listen(port);
 
+var userID = process.argv[2];
+if(userID == null) {
+  console.log("Please provide your username.");
+  process.exit();
+}
+
 app.get('/', function (req, res) {
   res.header('Content-type', 'text/html');
   return res.end('<h1>Hello World!</h1>');
 });
 
 app.post('/', function (req, res) {
-  var logoutput = JSON.stringify(req.body);
-  console.log(logoutput);
+  
+  // var logoutput = JSON.stringify(req.body);
+  // console.log(logoutput);
   var output = req.body;
+  output.userID = userID;
+  console.log(JSON.stringify(output));
   csvParse(output,res)
 });
 
