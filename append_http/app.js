@@ -61,8 +61,8 @@ monitor.on('copy', function (data) {
 
 function csvParse(data,res){
   const Json2csvParser = require('json2csv').Parser;
-  const fields = ['timeStamp', 'userID', 'targetApp', 'eventType', 'url', 'content', 'target.id','target.class','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option'];
-
+  const fields = ['timeStamp', 'userID', 'targetApp', 'eventType', 'url', 'content', 'target.workbookName', 'target.sheetName','target.id','target.class','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option'];
+  // console.log(" DATA IS: " + JSON.stringify(data));
   var json2csvParser;
   if (!fs.existsSync('logs.csv')) {
     json2csvParser = new Json2csvParser({ fields, header: true });
