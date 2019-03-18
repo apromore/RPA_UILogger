@@ -118,13 +118,14 @@ function handleChange(event) {
                 if (!event.address.includes(":")) {
                     var eventType = "editCell";
 					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp[0].toString() } };
-					// postRest(eventObj);
+					postRest(eventObj);
                 } else {
                     var eventType = "editRange";
+                    postRest(eventObj);
                 }
                 // console.log("name is: " + name.name);
-                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N, sheetName: name.name, id: event.address, value: range.values } }
-                postRest(eventObj);
+                // var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N, sheetName: name.name, id: event.address, value: range.values } }
+                // postRest(eventObj);
                 
                 // console.log(eventObj);
                 OfficeHelpers.UI.notify("Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " + range.values);
