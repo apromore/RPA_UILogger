@@ -86,7 +86,7 @@ async function changeColor() {
             //OfficeHelpers.UI.notify(`The range address was ${range.address} and value was ${range.values}.`);
             //OfficeHelpers.UI.notify(`Excel,ColorChange: ${range.address}, ${range.values}`);
             
-            var req = {targetApp:"Excel", eventType:"ColorChange",target:{id: range.address, value:range.values}};
+            var req = {targetApp:"Excel", eventType:"ColorChange",target:{workbookName: workbook_name._N ,sheetName: name.name, id: range.address, value:range.values}};
             console.log(req);
             postRest(req);
             
@@ -116,7 +116,7 @@ function handleChange(event) {
                 var tmp = range.values;
                 if (!event.address.includes(":")) {
                     var eventType = "editCell";
-					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: tmp[0].toString() } };
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp[0].toString() } };
 					postRest(eventObj);
                 } else {
                     var eventType = "editRange";
@@ -146,13 +146,15 @@ function handleSelectionChange(event) {
                 console.log("Address of event: " + event.address);
                 console.log("Content of range: " + range.values);
                 var tmp = range.values;
+
+                console.log("[To String]: " + tmp[0].toString());
 				if (!event.address.includes(":")) {
                     var eventType = "getCell";
-					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: tmp[0].toString() } };
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp[0].toString() } };
 					postRest(eventObj);
                 } else {
                     var eventType = "getRange";
-					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { id: event.address, value: tmp } };
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp } };
 					postRest(eventObj);
                 }
                 var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: range.values } };
