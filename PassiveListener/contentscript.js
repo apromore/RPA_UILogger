@@ -97,8 +97,8 @@ function mouseClick(e) {
     var evt = window.event || e;
     eventObj.eventType = "mouseClick";
     var dt1 = getDataT1Class(evt);
-    console.log("eventObj: "+JSON.stringify(dt1));
-    if (dt1 != null && dt1 != undefined) {
+    // console.log("DT1 OBJ: "+JSON.stringify(dt1));
+    if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0) {
         // specific for student 1 application
         eventObj.target = dt1;
         myPort.postMessage(eventObj);
@@ -117,7 +117,6 @@ function mouseClick(e) {
 function buildTarget(mye) {
     var target = mye.target;
     var targetObj = {};
-
     if (target.id != null && target.id != undefined && target.id != "") {
         targetObj.id = target.id;
     }
@@ -206,11 +205,11 @@ function getDataT1Class(mye) {
         dataT1.title = target.getAttribute("title");
        // console.log("type" + dataT1.type)
 
-        if (dataT1.ctrl != undefined || dataT1.ctrl != null) {
+        if (dataT1.ctrl != undefined && dataT1.ctrl != null && dataT1.ctrl != {}) {
             //console.log("dataT1 found")
             var dt1ctrl = JSON.parse(dataT1.ctrl);
             dt1.class = dataT1.class;
-            test = false;
+            // test = false;
             if (dt1ctrl.LabelText != undefined ) {
                 dt1.innerText = dt1ctrl.LabelText;    
             }
@@ -223,6 +222,7 @@ function getDataT1Class(mye) {
                     dataT1.class.includes(" checked") ? dt1.checked = true : dt1.checked = false;
                 }
             }
+            test = false;
         } else {
             target = target.parentNode;
             //console.log("ptarget" + target)     

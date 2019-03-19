@@ -16,6 +16,7 @@ function connected(p) {
     portFromCS = p;
     //portFromCS.postMessage({greeting: "hi there content script!"});
     portFromCS.onMessage.addListener(function (m) {
+
         console.log(m);
         m.targetApp = "Chrome";
         postRest(m);
