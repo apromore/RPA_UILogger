@@ -95,10 +95,10 @@ function mouseClick(e) {
     //alert('test');
     var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
-    eventObj.eventType = "mouseClick";
+    // eventObj.eventType = "mouseClick";
     var dt1 = getDataT1Class(evt);
-    // console.log("DT1 OBJ: "+JSON.stringify(dt1));
-    if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0) {
+    console.log("DT1 OBJ: "+JSON.stringify(dt1));
+    if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0 && dt1 != {} ) {
         // specific for student 1 application
         eventObj.target = dt1;
         myPort.postMessage(eventObj);
@@ -107,7 +107,17 @@ function mouseClick(e) {
         eventObj.target = target;
 
         if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.href != null) {
-        myPort.postMessage(eventObj); // need to change this to make it generic
+            if(target.tagName == "INPUT") {
+                eventObj["eventType"] = "clickTextField";
+                console.log(JSON.stringify(eventObj));
+            } else if(target.tagName == "BUTTON") {
+                eventObj["eventType"] = "clickButton";
+            } else if(target.href != null) {
+                eventObj["eventType"] = "clickHref";
+            } else {
+                    eventObj.eventType = "mouseClick";
+            }
+            myPort.postMessage(eventObj); // need to change this to make it generic
         }
     }
     console.log("eventObj: " + JSON.stringify(eventObj));
