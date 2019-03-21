@@ -149,7 +149,7 @@ function handleSelectionChange(event) {
                 console.log("Content of range: " + range.values);
                 var tmp = range.values;
 
-                console.log("[To String]: " + tmp[0].toString());
+                // console.log("[To String]: " + tmp[0].toString());
 				if (!event.address.includes(":")) {
                     var eventType = "getCell";
 					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp[0].toString() } };
