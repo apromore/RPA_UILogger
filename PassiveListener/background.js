@@ -4,7 +4,7 @@ chrome.tabs.onActivated.addListener(function () { printUrl("tab_activated") });
 //chrome.webNavigation.onBeforeNavigate.addListener(logOnBefore);
 // very spammy!
 
-chrome.windows.onFocusChanged.addListener(function () { printUrl("focus_window_changed") });
+// chrome.windows.onFocusChanged.addListener(function () { printUrl("focus_window_changed") });
 chrome.webNavigation.onCommitted.addListener(navigation);
 chrome.tabs.onRemoved.addListener(function () { printUrl("tab_closed") });
 
