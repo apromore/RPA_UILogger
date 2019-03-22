@@ -31,8 +31,8 @@ function paste(e) {
     var evt = window.event || e;
     eventObj.eventType = "paste";
     var target = buildTarget(evt);
-	var regex = /\r|\n|\t/g;
-    eventObj.content = evt.clipboardData.getData('text/plain').replace(regex,'');
+    var regex = /\r|\n|\t/g;
+    eventObj.content = evt.clipboardData.getData('text/plain').replace(regex, '');
     eventObj.target = target;
     console.log(eventObj);
     myPort.postMessage(eventObj);
@@ -45,8 +45,8 @@ function copy(e) {
     var target = buildTarget(evt);
     var copydata = document.getSelection();
     console.log("copypaste: " + copydata);
-	var regex = /\r|\n|\t/g;
-    eventObj.content = copydata.toString().replace(regex,'');
+    var regex = /\r|\n|\t/g;
+    eventObj.content = copydata.toString().replace(regex, '');
     eventObj.target = target;
     console.log("eventObj: " + JSON.stringify(eventObj));
     myPort.postMessage(eventObj);
@@ -97,8 +97,8 @@ function mouseClick(e) {
     var evt = window.event || e;
     // eventObj.eventType = "mouseClick";
     var dt1 = getDataT1Class(evt);
-    console.log("DT1 OBJ: "+JSON.stringify(dt1));
-    if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0 && dt1 != {} ) {
+    console.log("DT1 OBJ: " + JSON.stringify(dt1));
+    if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0 && dt1 != {}) {
         // specific for student 1 application
         eventObj.target = dt1;
         myPort.postMessage(eventObj);
@@ -107,15 +107,21 @@ function mouseClick(e) {
         eventObj.target = target;
 
         if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.href != null) {
-            if(target.tagName == "INPUT") {
-                eventObj["eventType"] = "clickTextField";
+            if (target.tagName == "INPUT") {
+                if (target.type == "checkbox") {
+                    eventObj["eventType"] = "clickCheckbox";
+                } else {
+                    eventObj["eventType"] = "clickTextField";
+                }
                 console.log(JSON.stringify(eventObj));
-            } else if(target.tagName == "BUTTON") {
+            } else if (target.tagName == "BUTTON") {
                 eventObj["eventType"] = "clickButton";
-            } else if(target.href != null) {
-                eventObj["eventType"] = "clickHref";
-            } else {
-                    eventObj.eventType = "mouseClick";
+            } else if (target.href != null) {
+                eventObj["eventType"] = "clickLink";
+            } else if (target.tagName == "SELECT") {
+                eventObj["eventType"] = "selectOptions";
+            }else {
+                eventObj.eventType = "mouseClick";
             }
             myPort.postMessage(eventObj); // need to change this to make it generic
         }
@@ -213,17 +219,17 @@ function getDataT1Class(mye) {
         dataT1.type = target.getAttribute("data-t1-control-type");
         dataT1.id = target.getAttribute("id");
         dataT1.title = target.getAttribute("title");
-       // console.log("type" + dataT1.type)
+        // console.log("type" + dataT1.type)
 
         if (dataT1.ctrl != undefined && dataT1.ctrl != null && dataT1.ctrl != {}) {
             //console.log("dataT1 found")
             var dt1ctrl = JSON.parse(dataT1.ctrl);
             dt1.class = dataT1.class;
             // test = false;
-            if (dt1ctrl.LabelText != undefined ) {
-                dt1.innerText = dt1ctrl.LabelText;    
+            if (dt1ctrl.LabelText != undefined) {
+                dt1.innerText = dt1ctrl.LabelText;
             }
-            if (dataT1.title != null && dataT1.title != undefined){
+            if (dataT1.title != null && dataT1.title != undefined) {
                 dt1.name = dataT1.title;
             }
             if (dataT1.type != undefined && dataT1.type != null) {
