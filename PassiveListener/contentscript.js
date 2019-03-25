@@ -100,6 +100,7 @@ function mouseClick(e) {
     console.log("DT1 OBJ: " + JSON.stringify(dt1));
     if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0 && dt1 != {}) {
         // specific for student 1 application
+        
         eventObj.target = dt1;
         myPort.postMessage(eventObj);
     } else {
@@ -204,7 +205,7 @@ function getParentLink(target) {
             //console.log("reached body" +target.id)
         }
     }
-    return href
+    return href;
 }
 
 function getDataT1Class(mye) {
