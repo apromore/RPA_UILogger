@@ -93,12 +93,13 @@ function onSelect(e) {
 
 function mouseClick(e) {
     //alert('test');
-    var eventObj = { timeStamp: new Date(Date.now()) };
+    var eventObj = { timeStamp: new Date(Date.now()) , eventType:"mouseClick" };
     var evt = window.event || e;
     // eventObj.eventType = "mouseClick";
+    // console.log(evt.target.innerText);
     var dt1 = getDataT1Class(evt);
     console.log("DT1 OBJ: " + JSON.stringify(dt1));
-    console.log(e.target);
+    // console.log("e target: "+ e.target);
     if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0 && dt1 != {}) {
         // specific for student 1 application
         
@@ -229,6 +230,9 @@ function getDataT1Class(mye) {
             //console.log("dataT1 found")
             var dt1ctrl = JSON.parse(dataT1.ctrl);
             dt1.class = dataT1.class;
+            if (target.innerText != null && target.innerText != undefined && target.innerText != "") {
+                dt1.innerText = target.innerText;
+            }
             // test = false;
             if (dt1ctrl.LabelText != undefined) {
                 dt1.innerText = dt1ctrl.LabelText;

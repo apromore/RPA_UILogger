@@ -26,15 +26,22 @@ function connected(p) {
 function printUrl(message) {
     chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, function (tabs) {
         try {
-            var activetab = tabs[0].url;
-            if (activetab.includes("newtab")) {
-                var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: "new_tab_created", url: activetab };
+            if(message != "tab_closed") {
+                var activetab = tabs[0].url;
+                if (activetab.includes("newtab")) {
+                    var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: "new_tab_created", url: activetab };
+                } else {
+                    var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: message, url: activetab };
+                }
+                //alert(req);
+                console.log(req);
+                postRest(req);
             } else {
+                var activetab = tabs[0].url;
                 var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: message, url: activetab };
+                console.log(req);
+                postRest(req);
             }
-            //alert(req);
-            console.log(req);
-            postRest(req);
         }
         catch (err) {
             console.log("Platform not supported");
