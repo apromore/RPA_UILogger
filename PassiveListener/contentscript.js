@@ -98,10 +98,13 @@ function mouseClick(e) {
     // eventObj.eventType = "mouseClick";
     var dt1 = getDataT1Class(evt);
     console.log("DT1 OBJ: " + JSON.stringify(dt1));
+    console.log(e.target);
     if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0 && dt1 != {}) {
         // specific for student 1 application
         
         eventObj.target = dt1;
+
+        // console.log(dt1);
         myPort.postMessage(eventObj);
     } else {
         var target = buildTarget(evt);
