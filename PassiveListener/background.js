@@ -14,7 +14,6 @@ chrome.runtime.onConnect.addListener(connected);
 
 function connected(p) {
     portFromCS = p;
-    //portFromCS.postMessage({greeting: "hi there content script!"});
     portFromCS.onMessage.addListener(function (m) {
 
         console.log(m);
@@ -33,7 +32,6 @@ function printUrl(message) {
                 } else {
                     var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: message, url: activetab };
                 }
-                //alert(req);
                 console.log(req);
                 postRest(req);
             } else {
@@ -70,16 +68,6 @@ function postRest(req) {
         console.log("Recording Disabled");
     }
 }
-
-/*
-function navigation(evt){
-    var req = { timeStamp: Date.now(), eventType: evt.transitionType, eventQual:JSON.stringify(evt.transitionQualifiers),url: evt.url };
-    if (evt.transitionType != "auto_subframe") {
-        console.log(req);
-        postRest(req);
-    }
-}
-*/
 
 function navigation(evt) {
     var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: evt.transitionType, eventQual: JSON.stringify(evt.transitionQualifiers), url: evt.url };

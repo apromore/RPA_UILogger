@@ -95,11 +95,8 @@ function mouseClick(e) {
     //alert('test');
     var eventObj = { timeStamp: new Date(Date.now()) , eventType:"mouseClick" };
     var evt = window.event || e;
-    // eventObj.eventType = "mouseClick";
-    // console.log(evt.target.innerText);
     var dt1 = getDataT1Class(evt);
     console.log("DT1 OBJ: " + JSON.stringify(dt1));
-    // console.log("e target: "+ e.target);
     if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0 && dt1 != {}) {
         // specific for student 1 application
         
@@ -199,14 +196,12 @@ function getParentLink(target) {
     var test = true;
     while (test) {
         target = target.parentNode;
-        //console.log("parent: " + target.tagName)
         if (target.href != null && target.href != undefined && target.href != "") {
             href = target.href;
             test = false;
         }
         if (target.tagName == "BODY") {
             test = false;
-            //console.log("reached body" +target.id)
         }
     }
     return href;
@@ -224,7 +219,6 @@ function getDataT1Class(mye) {
         dataT1.type = target.getAttribute("data-t1-control-type");
         dataT1.id = target.getAttribute("id");
         dataT1.title = target.getAttribute("title");
-        // console.log("type" + dataT1.type)
 
         if (dataT1.ctrl != undefined && dataT1.ctrl != null && dataT1.ctrl != {}) {
             //console.log("dataT1 found")
@@ -249,15 +243,12 @@ function getDataT1Class(mye) {
             test = false;
         } else {
             target = target.parentNode;
-            //console.log("ptarget" + target)     
-            //console.log("parentname: " + target.tagName)
             if (target.tagName == "BODY") {
                 test = false;
             }
 
         }
     }
-    //console.log("end cycle" + JSON.stringify(dt1));
     return dt1;
 }
 
