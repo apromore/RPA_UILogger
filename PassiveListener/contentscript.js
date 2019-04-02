@@ -99,21 +99,24 @@ function mouseClick(e) {
     // console.log("DT1 OBJ: " + JSON.stringify(dt1));
     if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0 && dt1 != {}) {
         // specific for student 1 application
-        // console.log("dt1 type:" + dt1.type);
-        if (dt1.type.toLowerCase() == "input" || dt1.type.toLowerCase() == "textarea") {
-            if (dt1.type.toLowerCase() == "checkbox") {
-                eventObj["eventType"] = "clickCheckbox";
+        console.log(dt1);
+        if (dt1.type != null || dt1.type != undefined) {
+            if (dt1.type.toLowerCase() == "input" || dt1.type.toLowerCase() == "textarea") {
+                if (dt1.type.toLowerCase() == "checkbox") {
+                    eventObj["eventType"] = "clickCheckbox";
+                } else {
+                    eventObj["eventType"] = "clickTextField";
+                }
+            } else if (dt1.type.toLowerCase() == "button") {
+                eventObj["eventType"] = "clickButton";
+            } else if (dt1.type.toLowerCase() == "select") {
+                eventObj["eventType"] = "selectOptions";
             } else {
-                eventObj["eventType"] = "clickTextField";
+                eventObj.eventType = "mouseClick";
             }
-        } else if (dt1.type.toLowerCase() == "button") {
-            eventObj["eventType"] = "clickButton";
-        } else if (dt1.type.toLowerCase() == "select") {
-            eventObj["eventType"] = "selectOptions";
         } else {
             eventObj.eventType = "mouseClick";
         }
-
         // console.log("Event Obj is : " + JSON.stringify(eventObj));
         eventObj.target = dt1;
 
