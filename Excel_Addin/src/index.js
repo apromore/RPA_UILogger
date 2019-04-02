@@ -20,7 +20,7 @@ Office.initialize = (reason) => {
             case 'inserted': console.log('The add-in was just inserted.');
             case 'documentOpened': console.log('The add-in is already part of the document.');
         }
-        OfficeHelpers.UI.notify(`The document was loaded`);
+        // OfficeHelpers.UI.notify(`The document was loaded`);
         $('#run').click(changeColor);
 
 
@@ -143,10 +143,10 @@ function handleSelectionChange(event) {
         var timeStamp = new Date(Date.now());
         return context.sync()
             .then(function () {
-                console.log("Workbook name: " + workbook_name._N);
-                console.log("Change type of event: Selection Changed");
-                console.log("Address of event: " + event.address);
-                console.log("Content of range: " + range.values);
+                // console.log("Workbook name: " + workbook_name._N);
+                // console.log("Change type of event: Selection Changed");
+                // console.log("Address of event: " + event.address);
+                // console.log("Content of range: " + range.values);
                 var tmp = range.values;
 
                 // console.log("[To String]: " + tmp[0].toString());
@@ -164,7 +164,7 @@ function handleSelectionChange(event) {
                 // }
                 //console.log("Source of event: " + event.source);
                 // OfficeHelpers.UI.notify("Selection Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " +range.values);
-                OfficeHelpers.UI.notify("obj: " + JSON.stringify(eventObj))
+                // OfficeHelpers.UI.notify("obj: " + JSON.stringify(eventObj))
             });
     }).catch(errorHandle)
 }

@@ -31,7 +31,7 @@ app.post('/', function (req, res) {
   var output = req.body;
   output.userID = userID;
   console.log(JSON.stringify(output));
-  csvParse(output,res)
+  csvParse(output,res);
 });
 
 console.log('Server running at ' + port);

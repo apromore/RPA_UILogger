@@ -50,7 +50,7 @@ function printUrl(message) {
 function postRest(req) {
     var storage = (localStorage.getItem('checkboxValue') || {}) == 'true';
     if (storage === true) {
-        console.log("Recording Enabled")
+        // console.log("Recording Enabled")
         $.ajax({
             type: "POST",
             url: "http://127.0.0.1:8080",
@@ -58,7 +58,7 @@ function postRest(req) {
             contentType: 'application/json',
             data: JSON.stringify(req),
             success: function (responseData, status, xhr) {
-                console.log("Request Successful!" + responseData);
+                // console.log("Request Successful!" + responseData);
             },
             error: function (request, status, error) {
                 console.log("Request Failed! " + JSON.stringify(request) + 'Status ' + status + "Error msg: " + error);

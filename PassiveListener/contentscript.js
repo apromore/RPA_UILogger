@@ -93,13 +93,28 @@ function onSelect(e) {
 
 function mouseClick(e) {
     //alert('test');
-    var eventObj = { timeStamp: new Date(Date.now()) , eventType:"mouseClick" };
+    var eventObj = { timeStamp: new Date(Date.now()), eventType: "mouseClick" };
     var evt = window.event || e;
     var dt1 = getDataT1Class(evt);
-    console.log("DT1 OBJ: " + JSON.stringify(dt1));
+    // console.log("DT1 OBJ: " + JSON.stringify(dt1));
     if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0 && dt1 != {}) {
         // specific for student 1 application
-        
+        console.log("dt1 type:" + dt1.type);
+        if (dt1.type.toLowerCase() == "input" || dt1.type.toLowerCase() == "textarea") {
+            if (dt1.type.toLowerCase() == "checkbox") {
+                eventObj["eventType"] = "clickCheckbox";
+            } else {
+                eventObj["eventType"] = "clickTextField";
+            }
+        } else if (dt1.type.toLowerCase() == "button") {
+            eventObj["eventType"] = "clickButton";
+        } else if (dt1.type.toLowerCase() == "select") {
+            eventObj["eventType"] = "selectOptions";
+        } else {
+            eventObj.eventType = "mouseClick";
+        }
+
+        // console.log("Event Obj is : " + JSON.stringify(eventObj));
         eventObj.target = dt1;
 
         // console.log(dt1);
@@ -107,9 +122,8 @@ function mouseClick(e) {
     } else {
         var target = buildTarget(evt);
         eventObj.target = target;
-
-        if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.href != null) {
-            if (target.tagName == "INPUT") {
+        if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.href != null || target.tagName == "TEXTAREA") {
+            if (target.tagName == "INPUT" || target.tagName == "TEXTAREA") {
                 if (target.type == "checkbox") {
                     eventObj["eventType"] = "clickCheckbox";
                 } else {
@@ -122,7 +136,7 @@ function mouseClick(e) {
                 eventObj["eventType"] = "clickLink";
             } else if (target.tagName == "SELECT") {
                 eventObj["eventType"] = "selectOptions";
-            }else {
+            } else {
                 eventObj.eventType = "mouseClick";
             }
             myPort.postMessage(eventObj); // need to change this to make it generic
@@ -208,10 +222,10 @@ function getParentLink(target) {
 }
 
 function getDataT1Class(mye) {
-    console.log("function entered")
     var test = true;
     var target = mye.target;
     var dt1 = {};
+    var firstTagName = target.tagName;
     while (test) {
         var dataT1 = {};
         dataT1.ctrl = target.getAttribute("data-t1-control");
@@ -221,7 +235,7 @@ function getDataT1Class(mye) {
         dataT1.title = target.getAttribute("title");
 
         if (dataT1.ctrl != undefined && dataT1.ctrl != null && dataT1.ctrl != {}) {
-            //console.log("dataT1 found")
+            // console.log(target.getAttribute("data-t1-control-type"));
             var dt1ctrl = JSON.parse(dataT1.ctrl);
             dt1.class = dataT1.class;
             if (target.innerText != null && target.innerText != undefined && target.innerText != "") {
@@ -234,21 +248,34 @@ function getDataT1Class(mye) {
             if (dataT1.title != null && dataT1.title != undefined) {
                 dt1.name = dataT1.title;
             }
-            if (dataT1.type != undefined && dataT1.type != null) {
-                if (dataT1.type.toLowerCase() == "checkbox") {
-                    //console.log("checkbox found");
-                    dataT1.class.includes(" checked") ? dt1.checked = true : dt1.checked = false;
+            if (firstTagName != "" || firstTagName != null || firstTagName != undefined) {
+                console.log("Type is: " + dataT1.type);
+                if (dataT1.type != undefined && dataT1.type != null) {
+                    if (dataT1.type.toLowerCase() == "checkbox") {
+                        //console.log("checkbox found");
+                        dt1.type = "checkbox";
+                        dataT1.class.includes(" checked") ? dt1.checked = true : dt1.checked = false;
+                    } else {
+                        dt1.type = firstTagName;
+                    }
                 }
             }
             test = false;
         } else {
+            console.log(firstTagName);
             target = target.parentNode;
+            if (firstTagName != "BUTTON" && firstTagName != "INPUT" && firstTagName != "TEXTAREA" && firstTagName != "CHECKBOX"
+                && firstTagName != "SELECT") {
+                console.log("In if statement to change tagName");
+                firstTagName = target.tagName;
+            }
             if (target.tagName == "BODY") {
                 test = false;
             }
 
         }
     }
+
     return dt1;
 }
 
