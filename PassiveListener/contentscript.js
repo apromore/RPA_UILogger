@@ -99,7 +99,7 @@ function mouseClick(e) {
     // console.log("DT1 OBJ: " + JSON.stringify(dt1));
     if (dt1 != null && dt1 != undefined && Object.keys(dt1).length > 0 && dt1 != {}) {
         // specific for student 1 application
-        console.log("dt1 type:" + dt1.type);
+        // console.log("dt1 type:" + dt1.type);
         if (dt1.type.toLowerCase() == "input" || dt1.type.toLowerCase() == "textarea") {
             if (dt1.type.toLowerCase() == "checkbox") {
                 eventObj["eventType"] = "clickCheckbox";
@@ -249,7 +249,6 @@ function getDataT1Class(mye) {
                 dt1.name = dataT1.title;
             }
             if (firstTagName != "" || firstTagName != null || firstTagName != undefined) {
-                console.log("Type is: " + dataT1.type);
                 if (dataT1.type != undefined && dataT1.type != null) {
                     if (dataT1.type.toLowerCase() == "checkbox") {
                         //console.log("checkbox found");
@@ -262,11 +261,9 @@ function getDataT1Class(mye) {
             }
             test = false;
         } else {
-            console.log(firstTagName);
             target = target.parentNode;
             if (firstTagName != "BUTTON" && firstTagName != "INPUT" && firstTagName != "TEXTAREA" && firstTagName != "CHECKBOX"
                 && firstTagName != "SELECT") {
-                console.log("In if statement to change tagName");
                 firstTagName = target.tagName;
             }
             if (target.tagName == "BODY") {
