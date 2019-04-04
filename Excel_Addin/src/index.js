@@ -153,14 +153,14 @@ function handleSelectionChange(event) {
 				if (!event.address.includes(":")) {
                     var eventType = "getCell";
 					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp[0].toString() } };
-					// postRest(eventObj);
+					postRest(eventObj);
                 } else {
                     var eventType = "getRange";
 					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp } };
-					// postRest(eventObj);
+					postRest(eventObj);
                 }
-                var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: range.values } };
-                postRest(eventObj);
+                // var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: range.values } };
+                // postRest(eventObj);
                 // }
                 //console.log("Source of event: " + event.source);
                 // OfficeHelpers.UI.notify("Selection Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " +range.values);
