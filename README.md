@@ -1,4 +1,4 @@
-# UI Logger for RPA
+# RPA UI Logger
 
 ## Installation Notes:
 1- Install Node.js - https://nodejs.org/en/ <br />
