@@ -1,4 +1,4 @@
-# RPAMiner
+# UI Logger for RPA
 
 ## Installation Notes:
 1- Install Node.js - https://nodejs.org/en/ <br />
