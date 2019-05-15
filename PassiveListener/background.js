@@ -72,7 +72,7 @@ function postRest(req) {
 function navigation(evt) {
     var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: evt.transitionType, eventQual: JSON.stringify(evt.transitionQualifiers), url: evt.url };
     if (evt.transitionType != "auto_subframe") {
-        if(req.eventType == "typed" || req.eventType == "auto_bookmark") {
+        if(req.eventType == "typed" || req.eventType == "auto_bookmark" || req.eventType == "generated") {
             req.eventType = "navigate_to";
         }
 
