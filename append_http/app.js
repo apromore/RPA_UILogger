@@ -28,13 +28,10 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', function (req, res) {
-  
-  // var logoutput = JSON.stringify(req.body);
-  // console.log(logoutput);
   var output = req.body;
   output.userID = userID;
   console.log(JSON.stringify(output));
-  csvParse(output,res)
+  csvParse(output,res);
 });
 
 console.log('Server running at ' + port);
@@ -50,7 +47,6 @@ var initialize = false;
 monitor.on('copy', function (data) {
   if (initialize == true && typeof data == "string" && data !== "Invalid Content") {
     //do something with the data
-    // var output = "[" + new Date() + "] " + JSON.stringify({eventType:"Copy",data:data});
 	var regex = /\r|\n|\t/g;
 	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content:data.replace(regex,'')};
 	console.log(eventObj);
@@ -62,7 +58,6 @@ monitor.on('copy', function (data) {
 function csvParse(data,res){
   const Json2csvParser = require('json2csv').Parser;
   const fields = ['timeStamp', 'userID', 'targetApp', 'eventType', 'url', 'content', 'target.workbookName', 'target.sheetName','target.id','target.class','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option'];
-  // console.log(" DATA IS: " + JSON.stringify(data));
   var json2csvParser;
   if (!fs.existsSync('logs.csv')) {
     json2csvParser = new Json2csvParser({ fields, header: true });
@@ -71,6 +66,8 @@ function csvParse(data,res){
   };
 
   var csv = json2csvParser.parse(data);
+csv = csv.replace(/\n/g, " _NL_ ");
+
   fs.appendFile('logs.csv', csv + "\n", function (err) {
     if (err) throw err;
     if (res != 0){
