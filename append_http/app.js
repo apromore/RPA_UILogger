@@ -66,7 +66,7 @@ function csvParse(data,res){
   };
 
   var csv = json2csvParser.parse(data);
-csv = csv.replace(/\n/g, " _NL_ ");
+csv = csv.replace(/\n/g, "");
 
   fs.appendFile('logs.csv', csv + "\n", function (err) {
     if (err) throw err;
