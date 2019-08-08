@@ -121,7 +121,8 @@ function handleChange(event) {
 					postRest(eventObj);
                 } else {
                     var eventType = "editRange";
-                    postRest(eventObj);
+			var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp} };
+			postRest(eventObj);
                 }
                 // console.log("name is: " + name.name);
                 // var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N, sheetName: name.name, id: event.address, value: range.values } }
