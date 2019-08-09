@@ -47,8 +47,8 @@ var initialize = false;
 monitor.on('copy', function (data) {
   if (initialize == true && typeof data == "string" && data !== "Invalid Content") {
     //do something with the data
-	var regex = /\r|\n|\t/g;
-	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content:data.replace(regex,'')};
+	var regex = /\r\n$/g;
+	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content:JSON.stringify(data.replace(regex,''))};
 	console.log(eventObj);
     csvParse(eventObj,0)
     //  console.log(output);
@@ -66,7 +66,7 @@ function csvParse(data,res){
   };
 
   var csv = json2csvParser.parse(data);
-csv = csv.replace(/\n/g, "");
+  csv = csv.replace(/\n/g, "");
 
   fs.appendFile('logs.csv', csv + "\n", function (err) {
     if (err) throw err;
