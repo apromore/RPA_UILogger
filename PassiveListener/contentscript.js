@@ -125,7 +125,7 @@ function mouseClick(e) {
     } else {
         var target = buildTarget(evt);
         eventObj.target = target;
-        if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.href != null || target.tagName == "TEXTAREA") {
+        if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.tagName == "A" || target.type == "submit" || target.href != null || target.tagName == "TEXTAREA") {
             if (target.tagName == "INPUT" || target.tagName == "TEXTAREA") {
                 if (target.type == "checkbox") {
                     eventObj["eventType"] = "clickCheckbox";
@@ -133,7 +133,7 @@ function mouseClick(e) {
                     eventObj["eventType"] = "clickTextField";
                 }
                 console.log(JSON.stringify(eventObj));
-            } else if (target.tagName == "BUTTON") {
+            } else if (target.tagName == "BUTTON" || target.type == "submit") {
                 eventObj["eventType"] = "clickButton";
             } else if (target.href != null) {
                 eventObj["eventType"] = "clickLink";
@@ -152,6 +152,10 @@ function mouseClick(e) {
 function buildTarget(mye) {
     var target = mye.target;
     var targetObj = {};
+    
+	if(target.tagName != "INPUT" && target.tagName != "BUTTON" && target.tagName != "A" && target.href == null)
+		target = getParentElement(target);
+	
     if (target.id != null && target.id != undefined && target.id != "") {
         targetObj.id = target.id;
     }
@@ -159,8 +163,8 @@ function buildTarget(mye) {
         var tagName = target.tagName;
         targetObj.tagName = tagName;
         var username = "";
-        if (target.class != null && target.class != undefined && target.class != "") {
-            targetObj.class = target.class;
+        if (target.className != null && target.className != undefined && target.className != "") {
+            targetObj.className = target.className;
         }
         if (target.type != null && target.type != undefined && target.type != "") {
             targetObj.type = target.type;
@@ -170,6 +174,9 @@ function buildTarget(mye) {
             username = target.name.toString();
             username = username.replace(/\s/g, "");
         }
+		if (target.title != null && target.title != undefined && target.title != "") {
+			targetObj.title = target.title;
+		}
         if (target.value != null && target.value != undefined) {
             // do not store passwords
             if (target.type.toLowerCase() == "password") {
@@ -189,7 +196,7 @@ function buildTarget(mye) {
             }
         }
         //Hrefs
-        if (target.href != null && target.href != undefined && target.href != "") {
+		if (target.href != null && target.href != undefined && target.href != "") {
             targetObj.href = target.href;
         } else {
             var href = getParentLink(target);
@@ -206,6 +213,17 @@ function buildTarget(mye) {
     }
     //console.log("targetObj: "+JSON.stringify(targetObj));
     return targetObj;
+}
+
+function getParentElement(target){
+	var parentElement = target;
+	while(parentElement.tagName != "BODY"){
+		if(parentElement.tagName == "BUTTON" || parentElement.tagName == "A" || (parentElement.href != null && parentElement.href != undefined && parentElement.href != ""))
+			return parentElement;
+		else
+			parentElement = parentElement.parentNode;
+	}
+	return null;
 }
 
 function getParentLink(target) {
