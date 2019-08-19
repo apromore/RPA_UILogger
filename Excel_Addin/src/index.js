@@ -26,8 +26,11 @@ Office.initialize = (reason) => {
 
         // Event Listeners   --- move to other page?
         Excel.run(function (context) {
+	    var sheets = context.workbook.worksheets;
+	    sheets.onActivated.add(handleSheetActivation);
+            sheets.onAdded.add(handleSheetAddition);
+		
             var worksheet = context.workbook.worksheets.getActiveWorksheet();
-            
             worksheet.onChanged.add(handleChange);
             worksheet.onSelectionChanged.add(handleSelectionChange);
             // var Wb_name = context.workbook.load('name');
@@ -99,8 +102,38 @@ async function changeColor() {
 
 }
 
-
 // Event Handlers
+
+function handleSheetActivation(event){
+	return Excel.run(function (context) {
+		var name = context.workbook.worksheets.getActiveWorksheet();
+		var workbook_name = context.workbook.load('name');
+		name.load("name");
+		var timeStamp = new Date(Date.now());
+		return context.sync()
+			.then(function () {
+				var eventType = "selectWorksheet";
+				var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N, sheetName: name.name}}
+				postRest(eventObj);
+			});
+	}).catch(errorHandle)
+}
+
+function handleSheetAddition(event){
+	return Excel.run(function (context) {
+		var name = context.workbook.worksheets.getActiveWorksheet();
+		var workbook_name = context.workbook.load('name');
+		name.load("name");
+		var timeStamp = new Date(Date.now());
+		return context.sync()
+			.then(function () {
+				var eventType = "addWorksheet";
+				var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N, sheetName: name.name}}
+				postRest(eventObj);
+			});
+	}).catch(errorHandle)
+}
+
 function handleChange(event) {
     return Excel.run(function (context) {
         var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
@@ -169,6 +202,8 @@ function handleSelectionChange(event) {
             });
     }).catch(errorHandle)
 }
+
+
 
 function postRest(req) {
     if ($('#onoff').prop('checked')) {
