@@ -23,8 +23,8 @@ Office.initialize = (reason) => {
         // OfficeHelpers.UI.notify(`The document was loaded`);
         $('#run').click(changeColor);
 
-
-        // Event Listeners   --- move to other page?
+		
+        // Event Listeners
         Excel.run(function (context) {
 	    var sheets = context.workbook.worksheets;
 	    sheets.onActivated.add(handleSheetActivation);
@@ -67,15 +67,10 @@ Office.initialize = (reason) => {
 };
 
 
-
-
 //change colour function
 async function changeColor() {
     try {
         await Excel.run(async context => {
-            /**
-             * Insert your Excel code here
-             */
             var workbook_name = context.workbook.load('name');
             const range = context.workbook.getSelectedRange();
 
@@ -84,12 +79,7 @@ async function changeColor() {
             range.load('values');
             // Update the fill color
             range.format.fill.color = 'yellow';
-
-            await context.sync();
-            //console.log(`LOG: The range address was ${range.address}.`);
-            //OfficeHelpers.UI.notify(`The range address was ${range.address} and value was ${range.values}.`);
-            //OfficeHelpers.UI.notify(`Excel,ColorChange: ${range.address}, ${range.values}`);
-            
+            await context.sync();           
             var req = {targetApp:"Excel", eventType:"ColorChange",target:{workbookName: workbook_name._N ,sheetName: name.name, id: range.address, value:range.values}};
             console.log(req);
             postRest(req);
@@ -154,14 +144,9 @@ function handleChange(event) {
 					postRest(eventObj);
                 } else {
                     var eventType = "editRange";
-			var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp} };
+			var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: JSON.stringify(tmp).replace(new RegExp(',', 'g'),';')} };
 			postRest(eventObj);
                 }
-                // console.log("name is: " + name.name);
-                // var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N, sheetName: name.name, id: event.address, value: range.values } }
-                // postRest(eventObj);
-                
-                // console.log(eventObj);
                 OfficeHelpers.UI.notify("Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " + range.values);
             });
     }).catch(errorHandle)
@@ -177,35 +162,22 @@ function handleSelectionChange(event) {
         var timeStamp = new Date(Date.now());
         return context.sync()
             .then(function () {
-                // console.log("Workbook name: " + workbook_name._N);
-                // console.log("Change type of event: Selection Changed");
-                // console.log("Address of event: " + event.address);
-                // console.log("Content of range: " + range.values);
+                
                 var tmp = range.values;
-
-                // console.log("[To String]: " + tmp[0].toString());
 				if (!event.address.includes(":")) {
                     var eventType = "getCell";
 					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp[0].toString() } };
 					postRest(eventObj);
                 } else {
                     var eventType = "getRange";
-					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp } };
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: JSON.stringify(tmp).replace(new RegExp(',', 'g'),';') } };
 					postRest(eventObj);
                 }
-                // var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: range.values } };
-                // postRest(eventObj);
-                // }
-                //console.log("Source of event: " + event.source);
-                // OfficeHelpers.UI.notify("Selection Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " +range.values);
-                // OfficeHelpers.UI.notify("obj: " + JSON.stringify(eventObj))
             });
     }).catch(errorHandle)
 }
 
-
-
-function postRest(req) {
+async function postRest(req) {
     if ($('#onoff').prop('checked')) {
         console.log("Recording Enabled")
         $.ajax({
@@ -228,5 +200,3 @@ function errorHandle(error) {
     console.log("An error has occured" + error)
     OfficeHelpers.UI.notify("An error has occurred")
 }
-/////
-
