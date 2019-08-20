@@ -75,16 +75,12 @@ function navigation(evt) {
         if(req.eventType == "typed" || req.eventType == "auto_bookmark" || req.eventType == "generated") {
             req.eventType = "navigate_to";
         }
-
-
         if(!req.url.includes("newtab")) {
             console.log(req);
             postRest(req);
         }
-
     }
 }
-
 
 // function logOnBefore(details) {
 //     var req = { timeStamp: new Date(Date.now()), eventType: "navigate_to", url: details.url };

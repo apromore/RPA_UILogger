@@ -31,9 +31,10 @@ function paste(e) {
     var evt = window.event || e;
     eventObj.eventType = "paste";
     var target = buildTarget(evt);
-    var regex = /\r|\n|\t/g;
-    eventObj.content = evt.clipboardData.getData('text/plain').replace(regex, '');
-    eventObj.target = target;
+    //var regex = /\r|\n|\t/g;
+    //eventObj.content = evt.clipboardData.getData('text/plain').replace(regex, '');
+    eventObj.content = JSON.stringify(evt.clipboardData.getData('text/plain'));
+	eventObj.target = target;
     console.log(eventObj);
     myPort.postMessage(eventObj);
 }
@@ -45,9 +46,10 @@ function copy(e) {
     var target = buildTarget(evt);
     var copydata = document.getSelection();
     console.log("copypaste: " + copydata);
-    var regex = /\r|\n|\t/g;
-    eventObj.content = copydata.toString().replace(regex, '');
-    eventObj.target = target;
+    //var regex = /\r|\n|\t/g;
+    //eventObj.content = copydata.toString().replace(regex, '');
+    eventObj.content = JSON.stringify(copydata);
+	eventObj.target = target;
     console.log("eventObj: " + JSON.stringify(eventObj));
     myPort.postMessage(eventObj);
 }
@@ -197,7 +199,7 @@ function buildTarget(mye) {
         }
         //Hrefs
 		if (target.href != null && target.href != undefined && target.href != "") {
-            targetObj.href = target.href;
+            targetObj.href = target.getAttribute("href");
         } else {
             var href = getParentLink(target);
             if (href != "") { // get the ultimate parent href if exists
@@ -232,7 +234,7 @@ function getParentLink(target) {
     while (test) {
         target = target.parentNode;
         if (target.href != null && target.href != undefined && target.href != "") {
-            href = target.href;
+            href = target.getAttribute("href");
             test = false;
         }
         if (target.tagName == "BODY") {
@@ -240,6 +242,11 @@ function getParentLink(target) {
         }
     }
     return href;
+}
+
+function getChildrenElemements(target){
+	var childrenElements = target.childNodes;
+	return childrenElements;
 }
 
 function getDataT1Class(mye) {

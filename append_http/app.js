@@ -50,7 +50,7 @@ monitor.on('copy', function (data) {
 	var regex = /\r\n$/g;
 	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content:JSON.stringify(data.replace(regex,''))};
 	console.log(eventObj);
-    csvParse(eventObj,0)
+    csvParse(eventObj,0);
     //  console.log(output);
   } else { initialize = true; }
 });
