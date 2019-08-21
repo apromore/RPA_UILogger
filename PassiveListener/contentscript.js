@@ -129,13 +129,14 @@ function mouseClick(e) {
         eventObj.target = target;
         if (target.tagName == "INPUT" || target.tagName == "BUTTON" || target.tagName == "A" || target.type == "submit" || target.href != null || target.tagName == "TEXTAREA") {
             if (target.tagName == "INPUT" || target.tagName == "TEXTAREA") {
-                if (target.type == "checkbox") {
+                if (target.type == "checkbox")
                     eventObj["eventType"] = "clickCheckbox";
-                } else {
-                    eventObj["eventType"] = "clickTextField";
-                }
+                else if (target.type == "submit")
+		    eventObj["eventType"] = "clickButton";
+		else
+		    eventObj["eventType"] = "clickTextField";
                 console.log(JSON.stringify(eventObj));
-            } else if (target.tagName == "BUTTON" || target.type == "submit") {
+            } else if (target.tagName == "BUTTON") {
                 eventObj["eventType"] = "clickButton";
             } else if (target.href != null) {
                 eventObj["eventType"] = "clickLink";
