@@ -156,8 +156,8 @@ function buildTarget(mye) {
     var target = mye.target;
     var targetObj = {};
     
-	if(target.tagName != "INPUT" && target.tagName != "BUTTON" && target.tagName != "A" && target.href == null)
-		target = getParentElement(target);
+    if(target.tagName != "INPUT" && target.tagName != "BUTTON" && target.tagName != "A" && target.href == null)
+        target = getParentElement(target);
 	
     if (target.id != null && target.id != undefined && target.id != "") {
         targetObj.id = target.id;
@@ -177,9 +177,9 @@ function buildTarget(mye) {
             username = target.name.toString();
             username = username.replace(/\s/g, "");
         }
-		if (target.title != null && target.title != undefined && target.title != "") {
-			targetObj.title = target.title;
-		}
+	if (target.title != null && target.title != undefined && target.title != "") {
+	    targetObj.title = target.title;
+	}
         if (target.value != null && target.value != undefined) {
             // do not store passwords
             if (target.type.toLowerCase() == "password") {
@@ -199,7 +199,7 @@ function buildTarget(mye) {
             }
         }
         //Hrefs
-		if (target.href != null && target.href != undefined && target.href != "") {
+	if (target.href != null && target.href != undefined && target.href != "") {
             targetObj.href = target.getAttribute("href");
         } else {
             var href = getParentLink(target);
