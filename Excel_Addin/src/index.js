@@ -23,6 +23,7 @@ Office.initialize = (reason) => {
         // OfficeHelpers.UI.notify(`The document was loaded`);
         $('#run').click(changeColor);
 
+		var worksheetEvents = new Array();
 		
         // Event Listeners
         Excel.run(function (context) {
@@ -31,39 +32,36 @@ Office.initialize = (reason) => {
             sheets.onAdded.add(handleSheetAddition);
 		
             var worksheet = context.workbook.worksheets.getActiveWorksheet();
-            worksheet.onChanged.add(handleChange);
-            worksheet.onSelectionChanged.add(handleSelectionChange);
-            //worksheet.onFiltered.add(handleFilter); currently available only in preview
-			//worksheet.onColumnSorted.add(handleSort);
+			worksheet.load("id");
 			
-            context.workbook.worksheets.onActivated.add(({ worksheetId}) => {
-                Excel.run(function (context) {
-                worksheet = context.workbook.worksheets.getActiveWorksheet();
-                console.log(worksheetId);
-                worksheet.onChanged.add(handleChange);
-                worksheet.onSelectionChanged.add(handleSelectionChange);  
-				//worksheet.onFiltered.add(handleFilter); currently available only in preview
-                //worksheet.onColumnSorted.add(handleSort);
-				//OfficeHelpers.UI.notify("Selected worksheet" + worksheetId);
-                return context.sync()
-                .then(function () {
-                    console.log("Sheet changed.");
-                    // OfficeHelpers.UI.notify("Event Handlers Registered");
-                });
-                }).catch(errorHandle);
-            })
-            return context.sync()
-                .then(function () {
-                    console.log("Event handler successfully registered for onChanged event in the worksheet.");
-                    console.log("Event handler successfully registered for onSelectionChanged event in the worksheet.");
-                    // OfficeHelpers.UI.notify("Event Handlers Registered");
-                });
-        
-            }).catch(errorHandle);
-    });
-};
-
-
+			return context.sync()
+				.then(function (){
+					worksheet.onChanged.add(handleChange);
+					worksheet.onSelectionChanged.add(handleSelectionChange);
+					worksheetEvents.push(worksheet.id);
+					//OfficeHelpers.UI.notify(worksheetEvents);
+					
+					context.workbook.worksheets.onActivated.add(({ worksheetId}) => {
+						Excel.run(function (context) {
+							worksheet = context.workbook.worksheets.getActiveWorksheet();
+							worksheet.load("id");	
+							return context.sync()
+							.then(function (){
+								if(!worksheetEvents.includes(worksheet.id)){
+									worksheet.onChanged.add(handleChange);
+									worksheet.onSelectionChanged.add(handleSelectionChange);  
+									worksheetEvents.push(worksheet.id);
+									//OfficeHelpers.UI.notify(worksheetEvents);
+								}
+								console.log("Sheet changed.");
+							});
+						}).catch(errorHandle);
+					})
+				})	
+		}).catch(errorHandle);
+	});
+}
+	
 //change colour function
 async function changeColor() {
     try {
@@ -85,8 +83,7 @@ async function changeColor() {
     } catch (error) {
         OfficeHelpers.UI.notify(error);
         OfficeHelpers.Utilities.log(error);
-    };
-
+	};
 }
 
 // Event Handlers
@@ -121,7 +118,7 @@ function handleSheetAddition(event){
 	}).catch(errorHandle)
 }
 
-// Placeholder for filter handler
+// Placeholder for filter handler - API for this functionality is in preview only
 function handleFilter(event){
 	return Excel.run(function (context) {
 		var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
@@ -139,6 +136,7 @@ function handleFilter(event){
 	}).catch(errorHandle)
 }
 
+// Placeholder for column sort handler - API for this functionality is in preview only
 function handleSort(event){
 	return Excel.run(function (context) {
 		//var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
@@ -177,8 +175,8 @@ function handleChange(event) {
 					postRest(eventObj);
                 } else {
                     var eventType = "editRange";
-			var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: JSON.stringify(tmp).replace(new RegExp(',', 'g'),';')} };
-			postRest(eventObj);
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: JSON.stringify(tmp).replace(new RegExp(',', 'g'),';')} };
+					postRest(eventObj);
                 }
                 //OfficeHelpers.UI.notify("Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " + range.values);
             });
@@ -194,8 +192,7 @@ function handleSelectionChange(event) {
         range.load(['address', 'values']);
         var timeStamp = new Date(Date.now());
         return context.sync()
-            .then(function () {
-                
+            .then(function () {                
                 var tmp = range.values;
 				if (!event.address.includes(":")) {
                     var eventType = "getCell";
@@ -231,5 +228,5 @@ async function postRest(req) {
 
 function errorHandle(error) {
     console.log("An error has occured" + error)
-    OfficeHelpers.UI.notify("An error has occurred")
+    OfficeHelpers.UI.notify(error)
 }
