@@ -26,28 +26,25 @@ Office.initialize = (reason) => {
 		
         // Event Listeners
         Excel.run(function (context) {
-	    var sheets = context.workbook.worksheets;
-	    sheets.onActivated.add(handleSheetActivation);
+			var sheets = context.workbook.worksheets;
+			sheets.onActivated.add(handleSheetActivation);
             sheets.onAdded.add(handleSheetAddition);
 		
             var worksheet = context.workbook.worksheets.getActiveWorksheet();
             worksheet.onChanged.add(handleChange);
             worksheet.onSelectionChanged.add(handleSelectionChange);
-            // var Wb_name = context.workbook.load('name');
-            // console.log(Object.keys(Wb_name));
-            // console.log(Wb_name);
-
-            // setTimeout(function(){
-            //     console.log(Wb_name._N);
-            // },1000 );
-
+            //worksheet.onFiltered.add(handleFilter); currently available only in preview
+			//worksheet.onColumnSorted.add(handleSort);
+			
             context.workbook.worksheets.onActivated.add(({ worksheetId}) => {
                 Excel.run(function (context) {
                 worksheet = context.workbook.worksheets.getActiveWorksheet();
                 console.log(worksheetId);
                 worksheet.onChanged.add(handleChange);
                 worksheet.onSelectionChanged.add(handleSelectionChange);  
-                //OfficeHelpers.UI.notify("Selected worksheet" + worksheetId);
+				//worksheet.onFiltered.add(handleFilter); currently available only in preview
+                //worksheet.onColumnSorted.add(handleSort);
+				//OfficeHelpers.UI.notify("Selected worksheet" + worksheetId);
                 return context.sync()
                 .then(function () {
                     console.log("Sheet changed.");
@@ -124,6 +121,41 @@ function handleSheetAddition(event){
 	}).catch(errorHandle)
 }
 
+// Placeholder for filter handler
+function handleFilter(event){
+	return Excel.run(function (context) {
+		var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
+        var name = context.workbook.worksheets.getActiveWorksheet();
+        var workbook_name = context.workbook.load('name');
+        name.load("name");
+        range.load(['address', 'values', 'name']);
+        var timeStamp = new Date(Date.now());
+		return context.sync()
+			.then(function () {
+				var eventType = "applyFilter";
+				var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N, sheetName: name.name, id: event.address}};
+				postRest(eventObj);
+			});
+	}).catch(errorHandle)
+}
+
+function handleSort(event){
+	return Excel.run(function (context) {
+		//var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
+        var name = context.workbook.worksheets.getActiveWorksheet();
+        var workbook_name = context.workbook.load('name');
+        name.load("name");
+        //range.load(['address', 'values', 'name']);
+        var timeStamp = new Date(Date.now());
+		return context.sync()
+			.then(function () {
+				var eventType = "sortColumn";
+				var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N, sheetName: name.name}};
+				postRest(eventObj);
+			});
+	}).catch(errorHandle)
+}
+
 function handleChange(event) {
     return Excel.run(function (context) {
         var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
@@ -137,6 +169,7 @@ function handleChange(event) {
                 console.log("Change type of event: " + event.changeType);
                 console.log("Address of event: " + event.address);
                 console.log("Content of range: " + range.values);
+				
                 var tmp = range.values;
                 if (!event.address.includes(":")) {
                     var eventType = "editCell";
@@ -147,7 +180,7 @@ function handleChange(event) {
 			var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: JSON.stringify(tmp).replace(new RegExp(',', 'g'),';')} };
 			postRest(eventObj);
                 }
-                OfficeHelpers.UI.notify("Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " + range.values);
+                //OfficeHelpers.UI.notify("Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " + range.values);
             });
     }).catch(errorHandle)
 }

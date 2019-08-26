@@ -1,4 +1,3 @@
-
 function handleChange(event) {
     return Excel.run(function (context) {
         var range = context.workbook.worksheets.getActiveWorksheet().getRange(event.address);
@@ -41,5 +40,3 @@ function errorHandle(error) {
         OfficeHelpers.UI.notify("Debug info: " + JSON.stringify(error.debugInfo));
     }
 }
-
-
