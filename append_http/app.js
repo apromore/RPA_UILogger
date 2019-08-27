@@ -22,6 +22,9 @@ if(userID == null) {
   process.exit();
 }
 
+var timestamp = new Date(Date.now());
+var filename = timestamp.getTime() + ".csv";
+
 app.get('/', function (req, res) {
   res.header('Content-type', 'text/html');
   return res.end('<h1>Hello World!</h1>');
@@ -59,7 +62,8 @@ function csvParse(data,res){
   const Json2csvParser = require('json2csv').Parser;
   const fields = ['timeStamp', 'userID', 'targetApp', 'eventType', 'url', 'content', 'target.workbookName', 'target.sheetName','target.id','target.className','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option', 'target.title'];
   var json2csvParser;
-  if (!fs.existsSync('logs.csv')) {
+  
+  if (!fs.existsSync(filename)) {
     json2csvParser = new Json2csvParser({ fields, header: true });
   } else {
     json2csvParser = new Json2csvParser({ fields, header: false });
@@ -67,8 +71,8 @@ function csvParse(data,res){
 
   var csv = json2csvParser.parse(data);
   csv = csv.replace(/\n/g, "");
-
-  fs.appendFile('logs.csv', csv + "\n", function (err) {
+  
+  fs.appendFile(filename, csv + "\n", function (err) {
     if (err) throw err;
     if (res != 0){
     res.write("http appended");
