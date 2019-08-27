@@ -72,10 +72,10 @@ function postRest(req) {
 function navigation(evt) {
     var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: evt.transitionType, eventQual: JSON.stringify(evt.transitionQualifiers), url: evt.url };
     if (evt.transitionType != "auto_subframe") {
-        if(req.eventType == "typed" || req.eventType == "auto_bookmark" || req.eventType == "generated") {
+        if(req.eventType == "typed" || req.eventType == "auto_bookmark" || req.eventType == "generated" || req.eventQual.includes("forward_back")) {
             req.eventType = "navigate_to";
         }
-        if(!req.url.includes("newtab")) {
+        if(!req.url.includes("newtab") && req.eventType != "link") {
             console.log(req);
             postRest(req);
         }
