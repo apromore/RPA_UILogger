@@ -214,6 +214,8 @@ function buildTarget(mye) {
     if (target.option != null && target.option != undefined && target.option != "") {
         targetObj.option = target.option;
     }
+	//targetObj.documentTitle = document.title;
+	
     //console.log("targetObj: "+JSON.stringify(targetObj));
     return targetObj;
 }
