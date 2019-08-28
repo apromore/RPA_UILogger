@@ -38,7 +38,7 @@ app.post('/', function (req, res) {
 });
 
 console.log('Server running at ' + port);
-console.log("Action Logger now recording")
+console.log("Action Logger now recording");
 
 const clipMonit = require('./clipboard/clipmonit.js');
 
@@ -64,9 +64,9 @@ function csvParse(data,res){
   var json2csvParser;
   
   if (!fs.existsSync(filename)) {
-    json2csvParser = new Json2csvParser({ fields, header: true });
+    json2csvParser = new Json2csvParser({ fields, header: true, withBOM: true });
   } else {
-    json2csvParser = new Json2csvParser({ fields, header: false });
+    json2csvParser = new Json2csvParser({ fields, header: false, withBOM: true });
   };
 
   var csv = json2csvParser.parse(data);
