@@ -4,8 +4,8 @@ var fs = require('fs'),
   bodyParser = require('body-parser'),
   http = require('http');
 
-var os = require("os"); 
-  
+var os = require("os");
+
 app.use(bodyParser.json());
 
 //enable cors
@@ -64,25 +64,23 @@ function csvParse(data,res){
   const Json2csvParser = require('json2csv').Parser;
   const fields = ['timeStamp', 'userID', 'targetApp', 'eventType', 'url', 'content', 'target.workbookName', 'target.sheetName','target.id','target.className','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option', 'target.title', 'target.innerHTML'];
   var json2csvParser;
-  
+
   if (!fs.existsSync(filename)) {
-    json2csvParser = new Json2csvParser({ fields, header: true, withBOM: true}); //withBOM: true, 
+    json2csvParser = new Json2csvParser({ fields, header: true, withBOM: true}); //withBOM: true,
   } else {
     json2csvParser = new Json2csvParser({ fields, header: false, withBOM: true}); //withBOM: true
   };
 
-  var csv = json2csvParser.parse(data);
+  var csv = json2csvParser.parse([data]);
   //csv = csv.replace(/\n$/g, "");
   //csv = csv.replace(/\"|\n/g, "");
   //csv = csv.replace(/\n/g, "");
-  
+
   //if(csv.charCodeAt(0) === 0xFEFF)
   //	  csv = csv.substr(1);
-  
+
   // tried UTF-8, utf, ascii, base64, hex, utf16le, ucs2
-  
-  csv = csv.replace(/\"/g,"");
-  
+
   fs.appendFile(filename, csv + os.EOL, function (err) {
     if (err) throw err;
     if (res != 0){
