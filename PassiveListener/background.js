@@ -99,7 +99,7 @@ function postRest(req) {
             url: "http://127.0.0.1:8080",
             crossDomain: true,
             contentType: 'application/json',
-            data: JSON.stringify(req),
+			data: JSON.stringify(req),
             success: function (responseData, status, xhr) {
                 // console.log("Request Successful!" + responseData);
             },

@@ -4,6 +4,8 @@ var fs = require('fs'),
   bodyParser = require('body-parser'),
   http = require('http');
 
+var os = require("os"); 
+  
 app.use(bodyParser.json());
 
 //enable cors
@@ -51,7 +53,7 @@ monitor.on('copy', function (data) {
   if (initialize == true && typeof data == "string" && data !== "Invalid Content") {
     //do something with the data
 	var regex = /\r\n$/g;
-	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content:JSON.stringify(data.replace(regex,''))};
+	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content: JSON.stringify(data.replace(regex,''))};
 	console.log(eventObj);
     csvParse(eventObj,0);
     //  console.log(output);
@@ -64,18 +66,24 @@ function csvParse(data,res){
   var json2csvParser;
   
   if (!fs.existsSync(filename)) {
-    json2csvParser = new Json2csvParser({ fields, header: true, withBOM: true});
+    json2csvParser = new Json2csvParser({ fields, header: true, withBOM: true}); //withBOM: true, 
   } else {
-    json2csvParser = new Json2csvParser({ fields, header: false, withBOM: true});
+    json2csvParser = new Json2csvParser({ fields, header: false, withBOM: true}); //withBOM: true
   };
 
   var csv = json2csvParser.parse(data);
   //csv = csv.replace(/\n$/g, "");
   //csv = csv.replace(/\"|\n/g, "");
+  //csv = csv.replace(/\n/g, "");
   
-  csv = csv.replace(/\n/g, "");
+  //if(csv.charCodeAt(0) === 0xFEFF)
+  //	  csv = csv.substr(1);
   
-  fs.appendFile(filename, csv + "\n", function (err) {
+  // tried UTF-8, utf, ascii, base64, hex, utf16le, ucs2
+  
+  csv = csv.replace(/\"/g,"");
+  
+  fs.appendFile(filename, csv + os.EOL, function (err) {
     if (err) throw err;
     if (res != 0){
     res.write("http appended");

@@ -221,7 +221,7 @@ function buildTarget(mye) {
         }
         // this section might be site specific, needs further testing
         if (target.innerText != null && target.innerText != undefined && target.innerText != "")
-            targetObj.innerText = target.innerText;
+            targetObj.innerText = JSON.stringify(target.innerText);
     }
     if (target.option != null && target.option != undefined && target.option != "") {
         targetObj.option = target.option;
