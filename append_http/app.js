@@ -60,7 +60,7 @@ monitor.on('copy', function (data) {
 
 function csvParse(data,res){
   const Json2csvParser = require('json2csv').Parser;
-  const fields = ['timeStamp', 'userID', 'targetApp', 'eventType', 'url', 'content', 'target.workbookName', 'target.sheetName','target.id','target.className','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option', 'target.title'];
+  const fields = ['timeStamp', 'userID', 'targetApp', 'eventType', 'url', 'content', 'target.workbookName', 'target.sheetName','target.id','target.className','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option', 'target.title', 'target.innerHTML'];
   var json2csvParser;
   
   if (!fs.existsSync(filename)) {

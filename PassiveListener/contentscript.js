@@ -30,6 +30,7 @@ function paste(e) {
     var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
     eventObj.eventType = "paste";
+	eventObj.url = document.URL;
     var target = buildTarget(evt);
 	var regex = /\r\n$/g;
 	eventObj.content = JSON.stringify(evt.clipboardData.getData('text/plain').replace(regex, ''));
@@ -45,6 +46,7 @@ function copy(e) {
     var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
     eventObj.eventType = evt.type;
+	eventObj.url = document.URL;
     var target = buildTarget(evt);
     var copydata = document.getSelection();
     console.log("copypaste: " + copydata);
@@ -61,6 +63,7 @@ function copy(e) {
 function keyPress(e) {
     var eventObj = { timeStamp: new Date(Date.now()) };
     eventObj.eventType = "pressKey";
+	eventObj.url = document.URL;
     eventObj.target = targetNaming(e.target);
     console.log(JSON.stringify(eventObj));
 }
@@ -70,6 +73,7 @@ function onChange(e) {
     var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
     eventObj.eventType = "editField";
+	eventObj.url = document.URL;
     var target = buildTarget(evt);
     eventObj.target = target;
     console.log("eventObj: " + JSON.stringify(eventObj));
@@ -81,6 +85,7 @@ function onInput(e) {
     var eventObj = { timeStamp: new Date(Date.now()) };
     var evt = window.event || e;
     eventObj.eventType = "fieldInput";
+	eventObj.url = document.URL;
     var target = buildTarget(evt);
     eventObj.target = target;
     console.log("eventObj: " + JSON.stringify(eventObj));
@@ -99,7 +104,7 @@ function onSelect(e) {
 
 function mouseClick(e) {
     //alert('test');
-    var eventObj = { timeStamp: new Date(Date.now()), eventType: "mouseClick" };
+    var eventObj = { timeStamp: new Date(Date.now()), eventType: "mouseClick", url: document.URL };
     var evt = window.event || e;
     var dt1 = getDataT1Class(evt);
     // console.log("DT1 OBJ: " + JSON.stringify(dt1));
@@ -181,9 +186,12 @@ function buildTarget(mye) {
             username = target.name.toString();
             username = username.replace(/\s/g, "");
         }
-	if (target.title != null && target.title != undefined && target.title != "") {
-	    targetObj.title = target.title;
-	}
+		if (target.title != null && target.title != undefined && target.title != "") {
+			targetObj.title = target.title;
+		}
+		if (target.innerHTML != null && target.innerHTML != undefined && target.innerHTML != ""){
+			targetObj.innerHTML = JSON.stringify(target.innerHTML);
+		}
         if (target.value != null && target.value != undefined) {
             // do not store passwords
             if (target.type.toLowerCase() == "password") {

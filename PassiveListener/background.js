@@ -47,9 +47,9 @@ function handleActivation(){
 				//currentTabs.set(tabId, new TabInfo(tabTitle, tabUrl));
 				tabTitles.set(tabId, tabTitle);
 				tabUrls.set(tabId, tabUrl);
-				var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: "createNewTab", url: tabUrl, target: {id: tabId, title: JSON.stringify(tabTitle)} };				
+				var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: "createNewTab", url: tabUrl, target: {id: tabId, title: tabTitle} };				
             } else {
-                var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: "selectTab", url: tabUrl, target: {id: tabId, title: JSON.stringify(tabTitle)} };
+                var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: "selectTab", url: tabUrl, target: {id: tabId, title: tabTitle} };
             }
             console.log(req);
             postRest(req);
