@@ -31,9 +31,11 @@ function paste(e) {
     var evt = window.event || e;
     eventObj.eventType = "paste";
     var target = buildTarget(evt);
+	var regex = /\r\n$/g;
+	eventObj.content = JSON.stringify(evt.clipboardData.getData('text/plain').replace(regex, ''));
     //var regex = /\r|\n|\t/g;
     //eventObj.content = evt.clipboardData.getData('text/plain').replace(regex, '');
-    eventObj.content = JSON.stringify(evt.clipboardData.getData('text/plain'));
+    //eventObj.content = JSON.stringify(evt.clipboardData.getData('text/plain'));
 	eventObj.target = target;
     console.log(eventObj);
     myPort.postMessage(eventObj);
@@ -46,9 +48,11 @@ function copy(e) {
     var target = buildTarget(evt);
     var copydata = document.getSelection();
     console.log("copypaste: " + copydata);
+	var regex = /\r\n$/g;
+	eventObj.content = JSON.stringify(copydata.toString().replace(regex, ''));
     //var regex = /\r|\n|\t/g;
     //eventObj.content = copydata.toString().replace(regex, '');
-    eventObj.content = JSON.stringify(copydata);
+    //eventObj.content = JSON.stringify(copydata);
 	eventObj.target = target;
     console.log("eventObj: " + JSON.stringify(eventObj));
     myPort.postMessage(eventObj);

@@ -64,12 +64,15 @@ function csvParse(data,res){
   var json2csvParser;
   
   if (!fs.existsSync(filename)) {
-    json2csvParser = new Json2csvParser({ fields, header: true, withBOM: true });
+    json2csvParser = new Json2csvParser({ fields, header: true, withBOM: true});
   } else {
-    json2csvParser = new Json2csvParser({ fields, header: false, withBOM: true });
+    json2csvParser = new Json2csvParser({ fields, header: false, withBOM: true});
   };
 
   var csv = json2csvParser.parse(data);
+  //csv = csv.replace(/\n$/g, "");
+  //csv = csv.replace(/\"|\n/g, "");
+  
   csv = csv.replace(/\n/g, "");
   
   fs.appendFile(filename, csv + "\n", function (err) {
@@ -79,3 +82,25 @@ function csvParse(data,res){
     res.end();}
   });
 }
+
+/*
+function csvParse(data,res){
+  const Json2csvParser = require('json2csv').Parser;
+  const fields = ['timeStamp', 'userID', 'targetApp', 'eventType', 'url', 'content', 'target.id','target.class','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option'];
+
+  var json2csvParser;
+  if (!fs.existsSync('logs.csv')) {
+    json2csvParser = new Json2csvParser({ fields, header: true, withBOM: true });
+  } else {
+    json2csvParser = new Json2csvParser({ fields, header: false, withBOM: true });
+  };
+
+  var csv = json2csvParser.parse(data);
+  fs.appendFile('logs.csv', csv + "\n", function (err) {
+    if (err) throw err;
+    if (res != 0){
+    res.write("http appended");
+    res.end();}
+  });
+}
+*/
