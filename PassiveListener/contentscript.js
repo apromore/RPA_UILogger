@@ -282,11 +282,11 @@ function getDataT1Class(mye) {
             var dt1ctrl = JSON.parse(dataT1.ctrl);
             dt1.class = dataT1.class;
             if (target.innerText != null && target.innerText != undefined && target.innerText != "") {
-                dt1.innerText = target.innerText;
+                dt1.innerText = JSON.stringify(target.innerText);
             }
             // test = false;
             if (dt1ctrl.LabelText != undefined) {
-                dt1.innerText = dt1ctrl.LabelText;
+                dt1.innerText = JSON.stringify(dt1ctrl.LabelText);
             }
             if (dataT1.title != null && dataT1.title != undefined) {
                 dt1.name = dataT1.title;

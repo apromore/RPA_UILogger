@@ -66,9 +66,9 @@ function csvParse(data,res){
   var json2csvParser;
   
   if (!fs.existsSync(filename)) {
-    json2csvParser = new Json2csvParser({ fields, header: true, withBOM: true}); //withBOM: true, 
+    json2csvParser = new Json2csvParser({ fields, header: true}); //withBOM: true, 
   } else {
-    json2csvParser = new Json2csvParser({ fields, header: false, withBOM: true}); //withBOM: true
+    json2csvParser = new Json2csvParser({ fields, header: false}); //withBOM: true
   };
 
   var csv = json2csvParser.parse(data);
