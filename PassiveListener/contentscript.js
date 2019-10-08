@@ -202,7 +202,7 @@ function buildTarget(mye) {
                 targetObj.value = "UserName"
             }
             else {
-                targetObj.value = target.value;
+                targetObj.value = JSON.stringify(target.value);
             }
         }
         if (target.type == "checkbox" || target.type == "radio") {
