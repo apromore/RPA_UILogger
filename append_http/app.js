@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
   var output = req.body;
   output.userID = userID;
-  console.log(JSON.stringify(output));
+  //console.log(JSON.stringify(output));
   csvParse(output,res);
 });
 
@@ -53,7 +53,8 @@ monitor.on('copy', function (data) {
   if (initialize == true && typeof data == "string" && data !== "Invalid Content") {
     //do something with the data
 	var regex = /\r\n$/g;
-	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content: JSON.stringify(data.replace(regex,''))};
+	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content: data.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(regex,'')};
+	//eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content: JSON.stringify(data.replace(regex,''))};
 	console.log(eventObj);
     csvParse(eventObj,0);
     //  console.log(output);

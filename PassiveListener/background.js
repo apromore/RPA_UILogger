@@ -99,7 +99,7 @@ function postRest(req) {
             url: "http://127.0.0.1:8080",
             crossDomain: true,
             contentType: 'application/json',
-			data: JSON.stringify(req),
+			data: req.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t"),
             success: function (responseData, status, xhr) {
                 // console.log("Request Successful!" + responseData);
             },
@@ -113,7 +113,7 @@ function postRest(req) {
 }
 
 function navigation(evt) {
-    var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: evt.transitionType, eventQual: JSON.stringify(evt.transitionQualifiers), url: evt.url };
+    var req = { timeStamp: new Date(Date.now()), targetApp: "Chrome", eventType: evt.transitionType, eventQual: evt.transitionQualifiers.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t"), url: evt.url };
     if (evt.transitionType != "auto_subframe") {
         if(req.eventType == "typed" || req.eventType == "auto_bookmark" || req.eventType == "generated" || req.eventQual.includes("forward_back")) {
             req.eventType = "navigate_to";			

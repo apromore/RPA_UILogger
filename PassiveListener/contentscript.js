@@ -33,10 +33,7 @@ function paste(e) {
 	eventObj.url = document.URL;
     var target = buildTarget(evt);
 	var regex = /\r\n$/g;
-	eventObj.content = JSON.stringify(evt.clipboardData.getData('text/plain').replace(regex, ''));
-    //var regex = /\r|\n|\t/g;
-    //eventObj.content = evt.clipboardData.getData('text/plain').replace(regex, '');
-    //eventObj.content = JSON.stringify(evt.clipboardData.getData('text/plain'));
+	eventObj.content = evt.clipboardData.getData('text/plain').replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(regex, ''));
 	eventObj.target = target;
     console.log(eventObj);
     myPort.postMessage(eventObj);
@@ -51,12 +48,8 @@ function copy(e) {
     var copydata = document.getSelection();
     console.log("copypaste: " + copydata);
 	var regex = /\r\n$/g;
-	eventObj.content = JSON.stringify(copydata.toString().replace(regex, ''));
-    //var regex = /\r|\n|\t/g;
-    //eventObj.content = copydata.toString().replace(regex, '');
-    //eventObj.content = JSON.stringify(copydata);
+	eventObj.content = copydata.toString().replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(regex, ''));
 	eventObj.target = target;
-    console.log("eventObj: " + JSON.stringify(eventObj));
     myPort.postMessage(eventObj);
 }
 
@@ -65,7 +58,6 @@ function keyPress(e) {
     eventObj.eventType = "pressKey";
 	eventObj.url = document.URL;
     eventObj.target = targetNaming(e.target);
-    console.log(JSON.stringify(eventObj));
 }
 
 // onChange procs every time there an element has finished changed
@@ -76,7 +68,6 @@ function onChange(e) {
 	eventObj.url = document.URL;
     var target = buildTarget(evt);
     eventObj.target = target;
-    console.log("eventObj: " + JSON.stringify(eventObj));
     myPort.postMessage(eventObj);
 }
 
@@ -88,7 +79,6 @@ function onInput(e) {
 	eventObj.url = document.URL;
     var target = buildTarget(evt);
     eventObj.target = target;
-    console.log("eventObj: " + JSON.stringify(eventObj));
     myPort.postMessage(eventObj);
 }
 
@@ -144,7 +134,7 @@ function mouseClick(e) {
 		    eventObj["eventType"] = "clickButton";
 		else
 		    eventObj["eventType"] = "clickTextField";
-                console.log(JSON.stringify(eventObj));
+                //console.log(JSON.stringify(eventObj));
             } else if (target.tagName == "BUTTON") {
                 eventObj["eventType"] = "clickButton";
             } else if (target.href != null) {
@@ -157,7 +147,7 @@ function mouseClick(e) {
             myPort.postMessage(eventObj); // need to change this to make it generic
         }
     }
-    console.log("eventObj: " + JSON.stringify(eventObj));
+    //console.log("eventObj: " + JSON.stringify(eventObj));
 }
 
 // build the target object
@@ -190,7 +180,7 @@ function buildTarget(mye) {
 			targetObj.title = target.title;
 		}
 		if (target.innerHTML != null && target.innerHTML != undefined && target.innerHTML != ""){
-			targetObj.innerHTML = JSON.stringify(target.innerHTML);
+			targetObj.innerHTML = target.innerHTML.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t");
 		}
         if (target.value != null && target.value != undefined) {
             // do not store passwords
@@ -202,7 +192,7 @@ function buildTarget(mye) {
                 targetObj.value = "UserName"
             }
             else {
-                targetObj.value = JSON.stringify(target.value);
+                targetObj.value = target.value.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t");
             }
         }
         if (target.type == "checkbox" || target.type == "radio") {
@@ -221,7 +211,7 @@ function buildTarget(mye) {
         }
         // this section might be site specific, needs further testing
         if (target.innerText != null && target.innerText != undefined && target.innerText != "")
-            targetObj.innerText = JSON.stringify(target.innerText);
+            targetObj.innerText = target.innerText.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t");
     }
     if (target.option != null && target.option != undefined && target.option != "") {
         targetObj.option = target.option;
@@ -282,11 +272,11 @@ function getDataT1Class(mye) {
             var dt1ctrl = JSON.parse(dataT1.ctrl);
             dt1.class = dataT1.class;
             if (target.innerText != null && target.innerText != undefined && target.innerText != "") {
-                dt1.innerText = JSON.stringify(target.innerText);
+                dt1.innerText = target.innerText.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t");
             }
             // test = false;
             if (dt1ctrl.LabelText != undefined) {
-                dt1.innerText = JSON.stringify(dt1ctrl.LabelText);
+                dt1.innerText = dt1ctrl.LabelText.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t");
             }
             if (dataT1.title != null && dataT1.title != undefined) {
                 dt1.name = dataT1.title;
