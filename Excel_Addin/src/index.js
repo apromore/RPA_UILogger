@@ -175,8 +175,8 @@ function handleChange(event) {
 					postRest(eventObj);
                 } else {
                     var eventType = "editRange";
-					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(new RegExp(',', 'g'),';')} };
-					//var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: JSON.stringify(tmp).replace(new RegExp(',', 'g'),';')} };
+					//var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(new RegExp(',', 'g'),';')} };
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: JSON.stringify(tmp).replace(new RegExp(',', 'g'),';')} };
 					postRest(eventObj);
                 }
                 //OfficeHelpers.UI.notify("Change type of event: " + event.changeType + " Address of event: " + event.address + " Value: " + range.values);
@@ -201,8 +201,8 @@ function handleSelectionChange(event) {
 					postRest(eventObj);
                 } else {
                     var eventType = "getRange";
-					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(new RegExp(',', 'g'),';') } };
-					//var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: JSON.stringify(tmp).replace(new RegExp(',', 'g'),';') } };
+					//var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: tmp.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(new RegExp(',', 'g'),';') } };
+					var eventObj = { timeStamp: timeStamp, targetApp: "Excel", eventType: eventType, target: { workbookName: workbook_name._N ,sheetName: name.name, id: event.address, value: JSON.stringify(tmp).replace(new RegExp(',', 'g'),';') } };
 					postRest(eventObj);
                 }
             });
@@ -217,8 +217,8 @@ async function postRest(req) {
             url: "http://127.0.0.1:8080",
             crossDomain: true,
             contentType: 'application/json',
-			data: req.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t"),
-            //data: JSON.stringify(req),
+			//data: req.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t"),
+            data: JSON.stringify(req),
             success: function (responseData, status, xhr) {
                 console.log("Request Successful!" + responseData);
             },

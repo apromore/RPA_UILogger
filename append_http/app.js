@@ -35,7 +35,7 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
   var output = req.body;
   output.userID = userID;
-  //console.log(JSON.stringify(output));
+  console.log(JSON.stringify(output));
   csvParse(output,res);
 });
 
@@ -53,8 +53,7 @@ monitor.on('copy', function (data) {
   if (initialize == true && typeof data == "string" && data !== "Invalid Content") {
     //do something with the data
 	var regex = /\r\n$/g;
-	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content: data.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(regex,'')};
-	//eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content: JSON.stringify(data.replace(regex,''))};
+	eventObj={timeStamp:new Date(Date.now()),targetApp:"OS-Clipboard",eventType:"copy",content: data.replace(regex,"").replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t")};
 	console.log(eventObj);
     csvParse(eventObj,0);
     //  console.log(output);
@@ -82,7 +81,7 @@ function csvParse(data,res){
   
   // tried UTF-8, utf, ascii, base64, hex, utf16le, ucs2
   
-  //csv = csv.replace(/\"/g,"");
+  csv = csv.replace(/\"/g,"");
   
   fs.appendFile(filename, csv + os.EOL, function (err) {
     if (err) throw err;
@@ -96,14 +95,12 @@ function csvParse(data,res){
 function csvParse(data,res){
   const Json2csvParser = require('json2csv').Parser;
   const fields = ['timeStamp', 'userID', 'targetApp', 'eventType', 'url', 'content', 'target.id','target.class','target.tagName', 'target.type', 'target.name', 'target.value', 'target.innerText', 'target.checked', 'target.href', 'target.option'];
-
   var json2csvParser;
   if (!fs.existsSync('logs.csv')) {
     json2csvParser = new Json2csvParser({ fields, header: true, withBOM: true });
   } else {
     json2csvParser = new Json2csvParser({ fields, header: false, withBOM: true });
   };
-
   var csv = json2csvParser.parse(data);
   fs.appendFile('logs.csv', csv + "\n", function (err) {
     if (err) throw err;

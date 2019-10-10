@@ -33,9 +33,9 @@ function paste(e) {
 	eventObj.url = document.URL;
     var target = buildTarget(evt);
 	var regex = /\r\n$/g;
-	eventObj.content = evt.clipboardData.getData('text/plain').replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(regex, ''));
+	eventObj.content = evt.clipboardData.getData('text/plain').replace(regex, '').replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t");
 	eventObj.target = target;
-    console.log(eventObj);
+    console.log("eventObj: " + JSON.stringify(eventObj));
     myPort.postMessage(eventObj);
 }
 
@@ -48,7 +48,7 @@ function copy(e) {
     var copydata = document.getSelection();
     console.log("copypaste: " + copydata);
 	var regex = /\r\n$/g;
-	eventObj.content = copydata.toString().replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(regex, ''));
+	eventObj.content = copydata.toString().replace(regex, '').replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t");
 	eventObj.target = target;
     myPort.postMessage(eventObj);
 }
@@ -58,6 +58,7 @@ function keyPress(e) {
     eventObj.eventType = "pressKey";
 	eventObj.url = document.URL;
     eventObj.target = targetNaming(e.target);
+	console.log(JSON.stringify(eventObj));
 }
 
 // onChange procs every time there an element has finished changed
@@ -68,6 +69,7 @@ function onChange(e) {
 	eventObj.url = document.URL;
     var target = buildTarget(evt);
     eventObj.target = target;
+	console.log("eventObj: " + JSON.stringify(eventObj));
     myPort.postMessage(eventObj);
 }
 
@@ -107,18 +109,19 @@ function mouseClick(e) {
                     eventObj["eventType"] = "clickCheckbox";
                 } else {
                     eventObj["eventType"] = "clickTextField";
+					console.log(JSON.stringify(eventObj));
                 }
             } else if (dt1.type.toLowerCase() == "button") {
                 eventObj["eventType"] = "clickButton";
             } else if (dt1.type.toLowerCase() == "select") {
                 eventObj["eventType"] = "selectOptions";
             } else {
-                eventObj.eventType = "mouseClick";
+                eventObj["eventType"] = "mouseClick";
             }
         } else {
-            eventObj.eventType = "mouseClick";
+            eventObj["eventType"] = "mouseClick";
         }
-        // console.log("Event Obj is : " + JSON.stringify(eventObj));
+        console.log("Event Obj is : " + JSON.stringify(eventObj));
         eventObj.target = dt1;
 
         // console.log(dt1);
@@ -134,7 +137,7 @@ function mouseClick(e) {
 		    eventObj["eventType"] = "clickButton";
 		else
 		    eventObj["eventType"] = "clickTextField";
-                //console.log(JSON.stringify(eventObj));
+                console.log(JSON.stringify(eventObj));
             } else if (target.tagName == "BUTTON") {
                 eventObj["eventType"] = "clickButton";
             } else if (target.href != null) {
@@ -142,12 +145,12 @@ function mouseClick(e) {
             } else if (target.tagName == "SELECT") {
                 eventObj["eventType"] = "selectOptions";
             } else {
-                eventObj.eventType = "mouseClick";
+                eventObj["eventType"] = "mouseClick";
             }
             myPort.postMessage(eventObj); // need to change this to make it generic
         }
     }
-    //console.log("eventObj: " + JSON.stringify(eventObj));
+    console.log("eventObj: " + JSON.stringify(eventObj));
 }
 
 // build the target object
@@ -218,7 +221,7 @@ function buildTarget(mye) {
     }
 	//targetObj.documentTitle = document.title;
 	
-    //console.log("targetObj: "+JSON.stringify(targetObj));
+    console.log("targetObj: "+JSON.stringify(targetObj));
     return targetObj;
 }
 
