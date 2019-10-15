@@ -81,7 +81,7 @@ function csvParse(data,res){
   
   // tried UTF-8, utf, ascii, base64, hex, utf16le, ucs2
   
-  csv = csv.replace(/\"/g,"");
+  //csv = csv.replace(/\"/g,"");
   
   fs.appendFile(filename, csv + os.EOL, function (err) {
     if (err) throw err;
