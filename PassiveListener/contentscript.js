@@ -49,8 +49,6 @@ function copy(e) {
     console.log("copypaste: " + copydata);
 	var regex = /\r\n$/g;
 	eventObj.content = copydata.toString().replace(regex, '').replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t");
-	if(eventObj.content == "")
-		eventObj.content = "\"\""
 	eventObj.target = target;
     myPort.postMessage(eventObj);
 }
@@ -198,8 +196,6 @@ function buildTarget(mye) {
             }
             else {
                 targetObj.value = target.value.replace(/\n/g,"\\n").replace(/\r/g,"\\r").replace(/\t/g,"\\t");
-				if(targetObj.value == "")
-					targetObj.value = " "
             }
         }
         if (target.type == "checkbox" || target.type == "radio") {
