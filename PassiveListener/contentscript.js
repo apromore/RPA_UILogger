@@ -158,7 +158,7 @@ function buildTarget(mye) {
     var target = mye.target;
     var targetObj = {};
     
-    if(target.tagName != "INPUT" && target.tagName != "BUTTON" && target.tagName != "A" && target.href == null)
+    if(target.tagName != "INPUT" && target.tagName != "SELECT" && target.tagName != "BUTTON" && target.tagName != "A" && target.href == null)
         target = getParentElement(target);
 	
     if (target.id != null && target.id != undefined && target.id != "") {

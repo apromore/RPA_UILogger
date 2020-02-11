@@ -43,7 +43,7 @@ function handleActivation(){
 			var tabUrl = tabs[0].url;
 			var tabTitle = tabs[0].title;
 			var tabId = tabs[0].id;
-			if (tabUrl.includes("newtab")) {
+			if (!tabTitles.has(tabId)) {
 				//currentTabs.set(tabId, new TabInfo(tabTitle, tabUrl));
 				tabTitles.set(tabId, tabTitle);
 				tabUrls.set(tabId, tabUrl);
