@@ -16,7 +16,7 @@
     "clipboardy": "^1.2.3",
     "events": "^3.0.0",
     "execa": "^1.0.0",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "json2csv": "^4.3.3"
   },
   "devDependencies": {
